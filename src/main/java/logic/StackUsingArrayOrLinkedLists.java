@@ -30,13 +30,13 @@ public class StackUsingArrayOrLinkedLists {
     private int[] stack = {2, 4, 6, 19, 38, 1, -2};
 
 
-    private int push(int[] arrays) {
-
+    private int push(int elem) {
+        return 0;
     }
-
     
-    private int pop(int[] arrays) {
-        
+    
+    private int pop(int elem) {
+        return 0;
     }
 
 
