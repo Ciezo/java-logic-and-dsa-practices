@@ -117,9 +117,10 @@ public class StackUsingArrayOrLinkedLists {
          * cannot simply just replace it with 0, otherwise, that is
          * not truly "deleted", but replaced with a value 0
          */
-        int data = 0; 
+        // int data = 0; 
         if (isFull() != 1) {
-            stack[top] = data;
+            // stack[top] = data;
+            int data = stack[top];          // This is a fix for now?
             top = top - 1;
             return data;
         } else {
