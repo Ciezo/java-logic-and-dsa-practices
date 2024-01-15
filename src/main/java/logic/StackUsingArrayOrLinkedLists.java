@@ -119,6 +119,36 @@ public class StackUsingArrayOrLinkedLists {
 
 
 
+    /**
+     * 
+     * This is another overload method of pop() where we are 
+     * passsing an array represented as stack.
+     * @param stack
+     * @return element
+     * @example pop(initStack)
+     * This should remove the last element -2
+     */
+    private static int pop(int[] stack) {
+        // Check if the stack contains at least one element
+        int length = stack.length;
+        int data = 0; 
+        if(length == 0) {
+            System.out.println("Stack is empty. Cannot remove elements!");
+            return 0;
+        } else {
+            /**
+             * @todo Fix this. It replaces all the elements of the stack to 0 😂
+             */
+            for (int i = length - 1; i >= 0; i--) {
+                stack[i] = data;
+            }
+        }
+        
+        return data;
+    }
+
+
+
     private int getMinimum() {
         return 0; 
     }
@@ -152,6 +182,19 @@ public class StackUsingArrayOrLinkedLists {
             System.out.print(stack[i] + ", ");
         }
         System.out.print("]\n");
+
+
+        Thread.sleep(1000);
+
+        System.out.println("Using overloadded pop(int[] stack)");
+        pop(initStack);
+
+        System.out.println("Displaying the initialized stack...after pop(int[] stack)");
+
+        for(int i = 0; i < initStack.length; i++) {
+            System.out.println(initStack[i]);
+        }
+        
     }
 
 }
