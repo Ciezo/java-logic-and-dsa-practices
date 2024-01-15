@@ -1,3 +1,12 @@
+/**
+ * @author Cloyd Van Secuya
+ * 
+ * <p>
+ * Using the FIFO concept. A good practice for understanding the
+ * stack data structure.
+ * </p>
+ * 
+ */
 package main.java.logic; 
 
 /**
@@ -17,6 +26,25 @@ package main.java.logic;
  */
 
 public class StackUsingArrayOrLinkedLists {
+    
+    private int[] array = {2, 4, 6, 19, 38, 1, -2};
+
+
+    private void push(int[] arrays) {
+
+    }
+
+    
+    private void pop(int[] arrays) {
+        
+    }
+
+
+    private int getMinimum() {
+        return 0; 
+    }
+
+
     public static void main(String[] args) {
 
     }
