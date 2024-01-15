@@ -105,15 +105,16 @@ public class StackUsingArrayOrLinkedLists {
     
 
     
-    private int pop() {
+    private static int pop() {
+        int data = 0; 
         if (isFull() != 1) {
-            top = top + 1;
+            stack[top] = data;
+            top = top - 1;
+            return data;
         } else {
             System.out.println("Stack is empty. Cannot remove elements!");
             return 0;
         }
-        
-        return 0;
     }
 
 
@@ -124,20 +125,33 @@ public class StackUsingArrayOrLinkedLists {
 
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         System.out.println("Inserting elements into the stack..");
         
         push(3);
         push(5);
         push(2);
+        push(28);
 
         System.out.println("Displaying the stack");
         System.out.print("Stack [");
         for(int i = 0; i < MAXSIZE; i++) {
             System.out.print(stack[i] + ", ");
         }
-        System.out.print("]");
-
+        System.out.print("]\n");
+        
+        System.out.println("Popping...");
+        
+        Thread.sleep(1000);
+        
+        pop();
+        
+        System.out.println("Displaying the stack");
+        System.out.print("Stack [");
+        for(int i = 0; i < MAXSIZE; i++) {
+            System.out.print(stack[i] + ", ");
+        }
+        System.out.print("]\n");
     }
 
 }
