@@ -29,21 +29,14 @@ public class ReverseStringNatively {
     private static String revereseString(String input) {
         char[] temp = input.toCharArray();
         int length = temp.length;
-        char[] temp2 = new char[length-1];
-
-        /**
-         * I think it's better to use for-each loop
-         */
+        
         int index = 0;
-        for (char c : temp) {
-            if (index < temp2.length) {
-                temp2[index++] = c;
-            }
+        for(int i = length - 1; i >= 0; i--) {
+            temp[index] = temp[i];
         }
         
         /** Return the char array as a String */
-        String finalRes = String.copyValueOf(temp2);
-        return finalRes;
+        return String.copyValueOf(temp);
     }
 
     public static void main(String[] args) {
