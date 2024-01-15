@@ -78,12 +78,10 @@ public class StackUsingArrayOrLinkedLists {
 
 
     private static int push(int elem, int[] stack) {
-        // First, check if the stack is full
         if (isFull() != 1) {
             top = top + 1;
             stack[top] = elem;
         } else {
-            // Second, simply insert the desired element into the stack with the correct position
             System.out.println("Stack is now full. Please, try again!");
             return 0;
         }
