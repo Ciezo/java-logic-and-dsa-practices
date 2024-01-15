@@ -68,7 +68,7 @@ public class StackUsingArrayOrLinkedLists {
     private static int[] stack = new int[MAXSIZE];
 
 
-    
+
     private static int isFull() {
         if (top == MAXSIZE) 
             return 1; 
@@ -93,7 +93,7 @@ public class StackUsingArrayOrLinkedLists {
     
 
     
-    private int pop(int elem) {
+    private int pop() {
         return 0;
     }
 
@@ -106,6 +106,16 @@ public class StackUsingArrayOrLinkedLists {
 
 
     public static void main(String[] args) {
+        System.out.println("Inserting elements into the stack..");
+        
+        push(3);
+        push(5);
+        push(2);
+
+        System.out.println("Displaying the stack");
+        for(int i = 0; i < MAXSIZE; i++) {
+            System.out.print("Stack [" + stack[i] + ", ");
+        }
         
     }
 
