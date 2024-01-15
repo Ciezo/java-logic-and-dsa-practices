@@ -6,6 +6,15 @@
  * stack data structure.
  * </p>
  * 
+ * @todo 
+ * - Review the following (again): 
+ * 1. FIFO
+ *      - First-In and First-Out. It indicates that in a array or list
+ *        Whatever element is first to get into stack will also be the last to get out 
+ * 2. Stack data structure
+ *      - What is popping an element to the stack?
+ *      - What is pushing an element to the stack?
+ * 
  */
 package main.java.logic; 
 
@@ -27,8 +36,9 @@ package main.java.logic;
 
 public class StackUsingArrayOrLinkedLists {
     
-    private int[] stack = {2, 4, 6, 19, 38, 1, -2};
-
+    private static final int MAXSIZE = 7;
+    /* We initialize the stack as a pre-example */
+    private static int[] stack = {2, 4, 6, 19, 38, 1, -2};
 
     private int push(int elem) {
         return 0;
