@@ -113,10 +113,12 @@ public class StackUsingArrayOrLinkedLists {
         push(2);
 
         System.out.println("Displaying the stack");
+        System.out.print("Stack [");
         for(int i = 0; i < MAXSIZE; i++) {
-            System.out.print("Stack [" + stack[i] + ", ");
+            System.out.print(stack[i] + ", ");
         }
-        
+        System.out.print("]");
+
     }
 
 }
