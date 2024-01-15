@@ -60,17 +60,43 @@ package main.java.logic;
 public class StackUsingArrayOrLinkedLists {
     
     private static final int MAXSIZE = 7;
+    /* This represents empty stack */
+    private static int top = -1;
     /* We initialize the stack as a pre-example */
-    private static int[] stack = {2, 4, 6, 19, 38, 1, -2};
+    private static int[] initStack = {2, 4, 6, 19, 38, 1, -2};
+    
 
-    private int push(int elem) {
-        return 0;
+
+    private static int isFull() {
+        if (top == MAXSIZE) 
+            return 1; 
+
+        else 
+            return 0;
+    }
+
+
+
+    private static int push(int elem, int[] stack) {
+        // First, check if the stack is full
+        if (isFull() != 1) {
+            top = top + 1;
+            stack[top] = elem;
+        } else {
+            // Second, simply insert the desired element into the stack with the correct position
+            System.out.println("Stack is now full. Please, try again!");
+            return 0;
+        }
+
+        return elem;
     }
     
+
     
-    private int pop(int elem) {
+    private int pop(int elem, int[] stack) {
         return 0;
     }
+
 
 
     private int getMinimum() {
@@ -78,7 +104,11 @@ public class StackUsingArrayOrLinkedLists {
     }
 
 
-    public static void main(String[] args) {
 
+    public static void main(String[] args) {
+        /* Here is a stack to be configured */
+        int[] myStack = new int[MAXSIZE];   
+        
     }
+
 }
