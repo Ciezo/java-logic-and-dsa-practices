@@ -117,10 +117,13 @@ public class StackUsingArrayOrLinkedLists {
          * cannot simply just replace it with 0, otherwise, that is
          * not truly "deleted", but replaced with a value 0
          */
-        // int data = 0; 
+        int data = 0; 
         if (isFull() != 1) {
-            // stack[top] = data;
-            int data = stack[top];          // This is a fix for now?
+            stack[top] = data;
+            /* This doesn't fix anything 😭 Alright I am not gonna touch it. I guess I should  */
+            /* just pop elements by "replacing" them with 0.  */
+            /* I know it is not a best practice, but it is my solution for now.....💀 */
+            // int data = stack[top];          // This is a fix for now?
             top = top - 1;
             return data;
         } else {
@@ -214,6 +217,12 @@ public class StackUsingArrayOrLinkedLists {
         }
         System.out.print("]\n");
         
+        Thread.sleep(1000);
+
+        System.out.println("Getting minimum...");
+        int min = getMinimum(stack);
+        System.out.println("Minimum value at stack: " + min);
+
         System.out.println("Popping...");
         
         Thread.sleep(1000);
@@ -238,12 +247,6 @@ public class StackUsingArrayOrLinkedLists {
         // for(int i = 0; i < initStack.length; i++) {
         //     System.out.println(initStack[i]);
         // }
-
-        Thread.sleep(1000);
-
-        System.out.println("Getting minimum...");
-        int min = getMinimum(stack);
-        System.out.println("Minimum value at stack: " + min);
         
     }
 
