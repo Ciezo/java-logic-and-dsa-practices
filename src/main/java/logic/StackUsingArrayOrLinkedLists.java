@@ -106,6 +106,17 @@ public class StackUsingArrayOrLinkedLists {
 
     
     private static int pop() {
+        /**
+         * @todo Fix pop operation.
+         * We cannot simply replace the element to be removed to 0
+         * That is invalid 😭
+         * I learned that now.
+         * 
+         * To further understand, it is much better to delete 
+         * the recently inserted element from the stack. We 
+         * cannot simply just replace it with 0, otherwise, that is
+         * not truly "deleted", but replaced with a value 0
+         */
         int data = 0; 
         if (isFull() != 1) {
             stack[top] = data;
@@ -129,6 +140,9 @@ public class StackUsingArrayOrLinkedLists {
      * This should remove the last element -2
      */
     private static int pop(int[] stack) {
+        /**
+         * @todo Fix this.
+         */
         // Check if the stack contains at least one element
         int length = stack.length;
         int data = 0; 
@@ -149,8 +163,34 @@ public class StackUsingArrayOrLinkedLists {
 
 
 
-    private int getMinimum() {
-        return 0; 
+    private static int getMinimum(int[] stack) {
+        int data = 0; 
+        // First, scan the stack to see if there are any elements from 0 to n
+        // which are of lowest against each other
+        /* A nested for loop is needed for this */
+        for(int i = 0; i < stack.length; i++) {
+            for(int j = 0; j < i; j++) {
+                /**
+                 * Now, it is necessary to begin comparing 
+                 * each elem such that,
+                 * i = i
+                 * j = i + 1
+                 * through this we can begin comparing all 
+                 * respective elements
+                 */
+                if (stack[i] < stack[j]) {
+                    System.out.println("Comparing i to j ");
+                    System.out.println(stack[i] + " vs " + stack[j]);
+                    data = stack[i];
+                } else if (stack[j] < stack[i]) {
+                    System.out.println("Comparing j to i");
+                    System.out.println(stack[j] + " vs " + stack[i]);
+                    data = stack[j];
+                }
+            }
+        }
+        
+        return data; 
     }
 
 
@@ -162,6 +202,9 @@ public class StackUsingArrayOrLinkedLists {
         push(5);
         push(2);
         push(28);
+        push(69);
+        push(1);
+        push(6);
 
         System.out.println("Displaying the stack");
         System.out.print("Stack [");
@@ -184,16 +227,22 @@ public class StackUsingArrayOrLinkedLists {
         System.out.print("]\n");
 
 
+        // Thread.sleep(1000);
+
+        // System.out.println("Using overloadded pop(int[] stack)");
+        // pop(initStack);
+
+        // System.out.println("Displaying the initialized stack...after pop(int[] stack)");
+
+        // for(int i = 0; i < initStack.length; i++) {
+        //     System.out.println(initStack[i]);
+        // }
+
         Thread.sleep(1000);
 
-        System.out.println("Using overloadded pop(int[] stack)");
-        pop(initStack);
-
-        System.out.println("Displaying the initialized stack...after pop(int[] stack)");
-
-        for(int i = 0; i < initStack.length; i++) {
-            System.out.println(initStack[i]);
-        }
+        System.out.println("Getting minimum...");
+        int min = getMinimum(stack);
+        System.out.println("Minimum value at stack: " + min);
         
     }
 
