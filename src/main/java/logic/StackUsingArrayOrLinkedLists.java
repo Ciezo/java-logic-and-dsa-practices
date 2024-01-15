@@ -94,6 +94,13 @@ public class StackUsingArrayOrLinkedLists {
 
     
     private int pop() {
+        if (isFull() != 1) {
+            top = top + 1;
+        } else {
+            System.out.println("Stack is empty. Cannot remove elements!");
+            return 0;
+        }
+        
         return 0;
     }
 
