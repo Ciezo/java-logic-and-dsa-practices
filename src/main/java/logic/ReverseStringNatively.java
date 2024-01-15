@@ -5,6 +5,13 @@
  * This program shall allow a user to enter a String as an input 
  * then, reverses it as an output
  * </p>
+ * 
+ * <p>
+ * <code>reverseString(String input)</code>
+ * Gets a String as argyument then, converts 
+ * that into a char array for reversal 
+ * then <code>returns a new String</code> 
+ * </p>
  */
 package main.java.logic; 
 
