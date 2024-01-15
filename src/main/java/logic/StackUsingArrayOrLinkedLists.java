@@ -64,9 +64,11 @@ public class StackUsingArrayOrLinkedLists {
     private static int top = -1;
     /* We initialize the stack as a pre-example */
     private static int[] initStack = {2, 4, 6, 19, 38, 1, -2};
+    /* Here is a stack to be configured */
+    private static int[] stack = new int[MAXSIZE];
+
+
     
-
-
     private static int isFull() {
         if (top == MAXSIZE) 
             return 1; 
@@ -77,7 +79,7 @@ public class StackUsingArrayOrLinkedLists {
 
 
 
-    private static int push(int elem, int[] stack) {
+    private static int push(int elem) {
         if (isFull() != 1) {
             top = top + 1;
             stack[top] = elem;
@@ -91,7 +93,7 @@ public class StackUsingArrayOrLinkedLists {
     
 
     
-    private int pop(int elem, int[] stack) {
+    private int pop(int elem) {
         return 0;
     }
 
@@ -104,8 +106,6 @@ public class StackUsingArrayOrLinkedLists {
 
 
     public static void main(String[] args) {
-        /* Here is a stack to be configured */
-        int[] myStack = new int[MAXSIZE];   
         
     }
 
