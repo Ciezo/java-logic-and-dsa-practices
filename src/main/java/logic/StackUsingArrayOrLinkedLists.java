@@ -146,7 +146,7 @@ public class StackUsingArrayOrLinkedLists {
         
         pop();
         
-        System.out.println("Displaying the stack");
+        System.out.println("Displaying the stack after pop");
         System.out.print("Stack [");
         for(int i = 0; i < MAXSIZE; i++) {
             System.out.print(stack[i] + ", ");
