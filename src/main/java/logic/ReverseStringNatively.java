@@ -26,23 +26,26 @@ public class ReverseStringNatively {
     private static String input;
     private static Scanner sc = new Scanner(System.in);
 
-    private static String revereseString(String input) {
+    private static String reverseString(String input) {
         char[] temp = input.toCharArray();
         int length = temp.length;
-        
-        int index = 0;
-        for(int i = length - 1; i >= 0; i--) {
-            temp[index] = temp[i];
+    
+        for (int i = 0; i < length / 2; i++) {
+            // Swap characters at positions i and length - 1 - i
+            char tempChar = temp[i];
+            temp[i] = temp[length - 1 - i];
+            temp[length - 1 - i] = tempChar;
         }
-        
-        /** Return the char array as a String */
-        return String.copyValueOf(temp);
+    
+        // Return the char array as a String
+        return new String(temp);
     }
+    
 
     public static void main(String[] args) {
          System.out.println("Enter a string to reverse");
          System.out.print(">> ");
          input = sc.nextLine(); 
-         System.out.println(revereseString(input).toString());
+         System.out.println(reverseString(input).toString());
     }
 }
