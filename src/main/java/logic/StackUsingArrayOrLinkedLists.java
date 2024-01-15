@@ -6,14 +6,37 @@
  * stack data structure.
  * </p>
  * 
- * @todo 
+ * @todo Review the concept of Stack Data Structure  
  * - Review the following (again): 
- * 1. FIFO
- *      - First-In and First-Out. It indicates that in a array or list
- *        Whatever element is first to get into stack will also be the last to get out 
- * 2. Stack data structure
+ * 1. LIFO
+ *      - Last-In and First-Out. It indicates that in a array or list
+ *        This is an implementation of how a stack is followed. 
+ *        Any element that is last inserted, would be the first element to be removed from the stack.
+ * 
+ * <p>
+ * Example: 
+ * Here is a stack with 4 elements, counting from 3, 2, 1, 0
+ * 
+ * [3]          // The last element inserted
+ * [2]
+ * [1]
+ * [0]          // The first element inserted
+ * 
+ * Therefore, the last element inserted, 3, would be the first one to get removed (pop) from the stack
+ * 
+ * Hence, our new stack now becomes like this after pop(3) 
+ * 
+ * [2] 
+ * [1] 
+ * [0]  
+ * </p>   
+ * 
+  * 2. Stack data structure
+ *      Follows the LIFO, "Last-In and First-Out"
  *      - What is popping an element to the stack?
+ *              - Removing and deleteing an element
  *      - What is pushing an element to the stack?
+ *              - Inserting an element to the stack
  * 
  */
 package main.java.logic; 
