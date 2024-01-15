@@ -28,13 +28,17 @@ public class ReverseStringNatively {
 
     private static String revereseString(String input) {
         char[] temp = input.toCharArray();
-        char[] temp2 = {'x'};
+        int length = temp.length;
+        char[] temp2 = new char[length-1];
 
-        // Now, loop through each element and form a new array with reverse order
-        /** Scan the element starting from the last position */
-        /** @todo How to scan array at the last element? */
-        for(int i = 0; i < temp.length-1; i++) {
-            temp2[i] = temp[i];
+        /**
+         * I think it's better to use for-each loop
+         */
+        int index = 0;
+        for (char c : temp) {
+            if (index < temp2.length) {
+                temp2[index++] = c;
+            }
         }
         
         /** Return the char array as a String */
