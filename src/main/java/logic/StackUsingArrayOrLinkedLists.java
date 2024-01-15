@@ -27,7 +27,7 @@ package main.java.logic;
 
 public class StackUsingArrayOrLinkedLists {
     
-    private int[] array = {2, 4, 6, 19, 38, 1, -2};
+    private int[] stack = {2, 4, 6, 19, 38, 1, -2};
 
 
     private void push(int[] arrays) {
