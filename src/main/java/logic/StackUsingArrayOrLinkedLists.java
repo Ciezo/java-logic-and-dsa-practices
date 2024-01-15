@@ -2,8 +2,20 @@
  * @author Cloyd Van Secuya
  * 
  * <p>
- * Using the FIFO concept. A good practice for understanding the
+ * Using the LIFO concept. A good practice for understanding the
  * stack data structure.
+ * 
+ * <b>When we say 'top' in a stack it is the most recent element inserted.</b>
+ * </p>
+ * 
+ * <p>
+ * From ChatGPT, 
+ * In the context of a stack, the term "top" typically refers to the last element that was inserted or pushed onto the stack. 
+ * It's the element that will be removed or popped first when performing a pop operation. 
+ * In a Last-In, First-Out (LIFO) data structure like a stack, the last element added is the first one to be removed. 
+ * So, when we say "top of the stack," it means the most recently added element.
+ * 
+ * This is a good review about the terminology 'top'.
  * </p>
  * 
  * @todo Review the concept of Stack Data Structure  
