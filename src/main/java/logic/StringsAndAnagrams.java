@@ -1,3 +1,34 @@
+/**
+ * @author Cloyd Van Secuya
+ * 
+ * <p>
+ * This program helps to understand how to convert String to char arrays
+ * then, sort them using Arrays.sort(). Finally, to compare if 
+ * two strings are anagram then it we use Arrays.equals(char[], char[]) 
+ * </p>
+ * 
+ * <p>
+ * Before starting this exercise, I thought of using a nested for-loops 
+ * to scan two char arrays respectively such that, say,
+ * 
+ * char[] toCompare1 = compare1.toCharArray();
+ * char[] toCompare2 = compare2.toCharArray();
+ * 
+ * where, I thought it will be like this....
+ * for(int i = 0; i < toCompare1.length; i++ ) {
+ *  for(int j = 0; j < toCompare2.length; j++ ) {
+ *      ....
+ *      // Then proceed to scan each element here...
+ *  }
+ * }
+ * 
+ * The solution above, I believe is wrong, due to reasons of it being 
+ * inefficient. Moreover, it is much better to use
+ * Arrays.equal()
+ * 
+ * With that, I conclude.
+ * </p>
+ */
 package main.java.logic;
 
 import java.util.Arrays;
