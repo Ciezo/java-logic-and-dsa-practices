@@ -20,6 +20,21 @@ public class StringsAndAnagrams {
 
     private static boolean checkIfAnagram(String compare1, String compare2) {
         /**
+         * @todo 
+         * This needs fixing.....
+         * I must learn to sort my converted char arrays.
+         * Then, I must begin comparing them.
+         * 
+         * I must recheck the for loop once I got back here....
+         * 
+         * I remember I did this in one of my CS Subjects...
+         * I must not waste those learnings...I must carefully remember...
+         */
+
+
+
+
+        /**
          * To compare two strings both if they are anagrams then,
          * I must first convert it into a char array to compare 
          * each char and its value respectively.
