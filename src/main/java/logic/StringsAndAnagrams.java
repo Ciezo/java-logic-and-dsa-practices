@@ -1,4 +1,6 @@
-package main.java.logic; 
+package main.java.logic;
+
+import java.util.Arrays;
 
 /**
  * Question 5:
@@ -31,42 +33,57 @@ public class StringsAndAnagrams {
          * I must not waste those learnings...I must carefully remember...
          */
 
-
-
+        /**
+         * Take note that I must first ensure that both compare1 and compare2
+         * are in lowercase
+         */
+        compare1 = compare1.toLowerCase();
+        compare2 = compare1.toLowerCase();
 
         /**
          * To compare two strings both if they are anagrams then,
          * I must first convert it into a char array to compare 
          * each char and its value respectively.
          */
-        boolean flag = false;
         char[] toCompare1 = compare1.toCharArray();
         char[] toCompare2 = compare2.toCharArray();
+
+        /**
+         * After the conversion to char array then, 
+         * sort the Arrays
+         */
+        Arrays.sort(toCompare1);
+        Arrays.sort(toCompare2);
         
         /**
-         * Then, simply begin comparing them by using nested for-loops
+         * Instead of using nested for-loops in comparing
+         * each character by character.
+         * It is much more efficient to use Arrays.equals()
+         * Reference: https://www.programiz.com/java-programming/examples/check-if-two-strings-are-anagram
+         *            @note This reference is really helpful
+         *            because I thought I would just use a nested for-loop to scan 
+         *            my two char arrays.
          */
-        int length1 = toCompare1.length; 
-        int length2 = toCompare2.length; 
-        for(int i = 0; i < length1; i++) {
-            for(int j = 0; j < length2;) {
-                if(toCompare1[i] == toCompare2[j]) {
-                    flag = true;
-                    return flag; 
-                } else {
-                    flag = false;
-                    return flag; 
-                }
-            }
+        boolean flag = Arrays.equals(toCompare1, toCompare2);       // This will return true if both arrays are equal
+        // When both char arrays are of equal value then,
+        if(flag) {
+            return flag;
+        } else {
+            return false;
         }
-        return flag;
+
     }
 
     public static void main(String[] args) {
-        String myStr1 = "listen";
-        String myStr2 = "silent";
+        str1 = "listen";
+        str2 = "silent";
         System.out.println("Checking if two strings are anagram...");
-        boolean result = checkIfAnagram(myStr1, myStr2);
-        System.out.println("Result: " + result);
+        boolean result = checkIfAnagram(str1, str2);
+        if(result == true) {
+            System.out.println("Result: " + result);
+            System.out.println("Anagrams");
+        } else {
+            System.out.println("Not Anagrams");
+        }
     }
 }
