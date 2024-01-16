@@ -148,21 +148,36 @@ public class StackUsingArrayOrLinkedLists {
          * @todo Fix this.
          */
         // Check if the stack contains at least one element
+        // int length = stack.length;
+        // int data = 0; 
+        // if(length == 0) {
+        //     System.out.println("Stack is empty. Cannot remove elements!");
+        //     return 0;
+        // } else {
+        //     /**
+        //      * @todo Fix this. It replaces all the elements of the stack to 0 😂
+        //      */
+        //     for (int i = length - 1; i >= 0; i--) {
+        //         stack[i] = data;
+        //     }
+        // }
+        
+        // return data;
+    
         int length = stack.length;
-        int data = 0; 
-        if(length == 0) {
+        int data = 0;
+        
+        // length will only be 0 if our stack is empty.
+        if (length == 0) {
             System.out.println("Stack is empty. Cannot remove elements!");
             return 0;
         } else {
-            /**
-             * @todo Fix this. It replaces all the elements of the stack to 0 😂
-             */
-            for (int i = length - 1; i >= 0; i--) {
-                stack[i] = data;
-            }
+            // Retrieve the top element before removing it
+            data = stack[length - 1];
+            // Set the top element to 0 (or any other sentinel value if needed)
+            stack[length - 1] = 0;
+            return data;
         }
-        
-        return data;
     }
 
 
@@ -237,16 +252,16 @@ public class StackUsingArrayOrLinkedLists {
         System.out.print("]\n");
 
 
-        // Thread.sleep(1000);
+        Thread.sleep(1000);
 
-        // System.out.println("Using overloadded pop(int[] stack)");
-        // pop(initStack);
+        System.out.println("Using overloadded pop(int[] stack)");
+        pop(initStack);
 
-        // System.out.println("Displaying the initialized stack...after pop(int[] stack)");
+        System.out.println("Displaying the initialized stack...after pop(int[] stack)");
 
-        // for(int i = 0; i < initStack.length; i++) {
-        //     System.out.println(initStack[i]);
-        // }
+        for(int i = 0; i < initStack.length; i++) {
+            System.out.println(initStack[i]);
+        }
         
     }
 
