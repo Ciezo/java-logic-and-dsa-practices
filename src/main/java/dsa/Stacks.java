@@ -42,7 +42,7 @@ package main.java.dsa;
 public class Stacks {
     
     /**
-     * Using arrays to represent a stack
+     * This will hold the stack with an assign value from the main()
      */
     private static int[] stack; 
     /* Top pointer where -1 also represents the bottom */
@@ -87,7 +87,7 @@ public class Stacks {
 
 
     public static void main(String[] args) {
-            
+
     }
 
 }
