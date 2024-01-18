@@ -47,41 +47,70 @@ public class Stacks {
     private static int[] stack; 
     /* Top pointer where -1 also represents the bottom */
     private static int top = -1;
-
+    /* I decided to make it final so we have a fix capacity of the stack to avoid stack overflow */
+    private static final int MAXSIZE = 10;
 
 
     private static int push(int data, int[] stack) {
+        // First, check if the stack is full
+        boolean isStackfull = isFull(stack);
+        if (!(isStackfull)) {
+            // If not full, then we can begin inserting data
+            top = top + 1;      // Make it to 0 as most recently inserted element
+            stack[top] = data;
+        } else {
+            // Otherwise, prompt the user to say stack is full
+            System.out.println("Stack is now full! \n Please, try again!");
+        } 
+        
+        
         return data; 
     }
 
 
 
     private static int pop(int[] stack) {
+        /**
+         * @todo I still don't know what is the best way 
+         * to remove an element from the stack without
+         * using 0 as substitute.
+         */
         return 0;
     }
 
 
 
     private static int top(int[] stack) {
-        return 0;
+        return stack[0]; 
     }
 
 
 
     private static boolean isFull(int[] stack) {
-        return false; 
+        int capacity = size(stack); 
+        if (capacity == MAXSIZE) {
+            return true; 
+        } else {
+            return false; 
+        }
     }
     
 
 
     private static boolean isEmpty(int[] stack) {
-        return false;
+        int capacity = stack.length; 
+        if (capacity == 0 || capacity < 0) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
 
 
     private static int size(int[] stack) {
-        return 0; 
+        int capacity = stack.length; 
+        return capacity;  
     }
     
 
