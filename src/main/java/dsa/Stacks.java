@@ -75,7 +75,22 @@ public class Stacks {
          * to remove an element from the stack without
          * using 0 as substitute.
          */
-        return 0;
+        int substituteData = 0;
+        boolean isStackEmpty = isEmpty(stack);
+        if(!(isStackEmpty)) {
+            /**
+             * Remember that to define the most recently inserted element
+             * using top variable, it should be assigned as,
+             * top = -1
+             * where, -1, indicates the most recently inserted element
+             */
+            // Get to the recently inserted element
+            stack[top] = substituteData;
+            return substituteData;
+        } else { 
+            System.out.println("Stack is empty! Cannot perform pop()");
+            return 0;
+        }
     }
 
 
@@ -130,9 +145,14 @@ public class Stacks {
          * Inserting data into the stack.
             The instance variable, stack, is a member of this class
          */
+        // Insert data here....
         push(2, stack);
         push(3, stack);
         push(4, stack);
+        push(5, stack);
+        push(6, stack);
+        // Insert data here....
+
 
         /* Check the contents of the stack */
         // I will just use a simple for-loop since 
@@ -144,6 +164,15 @@ public class Stacks {
         System.out.println("\n\nChecking top");
         int getTopMostElement = top(stack);
         System.out.println("Most recently inserted element: " + getTopMostElement);
+        
+        System.out.println("\n\nPopping...");
+        pop(stack);
+
+        System.out.println("Checking stack after pop()");
+        for(int i = 0; i < MAXSIZE; i++) {
+            System.out.println("Stack after pop: " + stack[i] + " at index " + i);
+        }
+        
     }
 
 }
