@@ -41,14 +41,14 @@ package main.java.dsa;
 
 public class Stacks {
     
+    /* I decided to make it final so we have a fix capacity of the stack to avoid stack overflow */
+    private static final int MAXSIZE = 10;
     /**
      * This will hold the stack with an assign value from the main()
      */
-    private static int[] stack; 
+    private static int[] stack = new int[MAXSIZE]; 
     /* Top pointer where -1 also represents the bottom */
     private static int top = -1;
-    /* I decided to make it final so we have a fix capacity of the stack to avoid stack overflow */
-    private static final int MAXSIZE = 10;
 
 
     private static int push(int data, int[] stack) {
@@ -88,7 +88,7 @@ public class Stacks {
 
     private static boolean isFull(int[] stack) {
         int capacity = size(stack); 
-        if (capacity == MAXSIZE) {
+        if (capacity > MAXSIZE) {
             return true; 
         } else {
             return false; 
@@ -116,7 +116,20 @@ public class Stacks {
 
 
     public static void main(String[] args) {
+        /**
+         * Inserting data into the stack.
+            The instance variable, stack, is a member of this class
+         */
+        push(2, stack);
+        push(3, stack);
+        push(4, stack);
 
+        /* Check the contents of the stack */
+        // I will just use a simple for-loop since 
+        // I implemented a stack here using arrays
+        for(int i = 0; i < MAXSIZE; i++) {
+            System.out.println("Stack: " + stack[i] + " at index " + i);
+        }
     }
 
 }
