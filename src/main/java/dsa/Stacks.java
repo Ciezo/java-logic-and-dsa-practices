@@ -95,7 +95,7 @@ public class Stacks {
 
 
 
-    private static int top(int[] stack) {
+    private static int peek(int[] stack) {
         /**
          * Before returning the topmost element.
          * I must check the stack if it is empty
@@ -161,8 +161,8 @@ public class Stacks {
             System.out.println("Stack: " + stack[i] + " at index " + i);
         }
 
-        System.out.println("\n\nChecking top");
-        int getTopMostElement = top(stack);
+        System.out.println("\n\nChecking top using peek()");
+        int getTopMostElement = peek(stack);
         System.out.println("Most recently inserted element: " + getTopMostElement);
         
         System.out.println("\n\nPopping...");
