@@ -59,7 +59,37 @@ public class BinarySearchAlgorithmForSortedArray {
     private static int low = 0;
     private static int mid = low + (high - low / 2);
 
-    public static void main(String[] args) {
+    /**
+     * This is an implementation of how I sort my arrays based on the principle such that, 
+     * array[i] > array[j]
+     * meaning that it is arranged in an descending order
+     * 
+     * @param array
+     * @return Sorted array to be used in binary search 
+     */
+    private static int[] sortArray(int[] array) {
+        int length = array.length;
+        /** I cloned the array to perform minimal changes to the param passed */
+        int[] sortedArr = array.clone(); 
+        for(int i = 0; i < length; i++) {
+            for(int j = i + 1; j < length; j++) {
+                // Check and compare individual elements 
+                if(sortedArr[i] > sortedArr[j]) {
+                    /* Create a temp variable to contain the said element to swap */
+                    int temp = sortedArr[i];                // key from index i, assign to temp
+                    sortedArr[i] = sortedArr[j];            // key from j assign to array of index i
+                    sortedArr[j] = temp;                    // value from temp assign to index of j 
+                }
+            }
+        }
+        return sortedArr;
+    }
 
+    public static void main(String[] args) {
+        int[] toSortArr = sortArray(unsortedArr);
+        System.out.println("Sorted array...");
+        for(int i = 0; i < toSortArr.length; i++) {
+            System.out.print(toSortArr[i] + " ");
+        }
     }
 }
