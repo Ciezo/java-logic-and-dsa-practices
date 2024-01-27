@@ -45,19 +45,6 @@ package main.java.logic;
 public class BinarySearchAlgorithmForSortedArray {
 
     private static int[] unsortedArr = {5, 2, 4, 1, 9, 8, 10, 15, 11, 12, 26, 18};
-    
-    /**
-     * This formula is based on the following: 
-     *      Compare the middle element of the search space with the key. 
-     *      If the key is found at middle element, the process is terminated.
-     *      If the key is not found at middle element, choose which half will be used as the next search space.
-     *      If the key is smaller than the middle element, then the left side is used for next search.
-     *      If the key is larger than the middle element, then the right side is used for next search.
-     *      This process is continued until the key is found or the total search space is exhausted.
-     */
-    private static int high = 0;
-    private static int low = 0;
-    private static int mid = low + (high - low / 2);
 
     /**
      * This is an implementation of how I sort my arrays based on the principle such that, 
@@ -85,10 +72,57 @@ public class BinarySearchAlgorithmForSortedArray {
         return sortedArr;
     }
 
+
+    /**
+     * Now, according to what I have searched it is highly recommended that 
+     * we sort the binary array, and in this case I have a procedure to do that 
+     * @link #sortArray(int[] array)}
+     * 
+     * @param sortedArray
+     * @param target
+     * @note Keep in mind to read the documentation above. 
+     *      !!!NO CHEATING CLOYD. ONLY GOOGLE WHAT IS TO GOOGLE. UNDERSTAND THIS!!!!
+     *      !!!KAYA MO YAN SELF!!!
+     *      
+     *      Hence, here are the important rules:  
+     *      1. If the key is found at middle element, the process is terminated.
+     *      2. If the key is not found at middle element, choose which half will be used as the next search space.
+     *      3. If the key is smaller than the middle element, then the LEFT side is used for next search.
+     *      4. If the key is larger than the middle element, then the RIGHT side is used for next search.
+     * 
+     *      This process is continued until the key is found or the total search space is exhausted.
+     * @return
+     */
+    private static int binarySearch(int[] sortedArray, int target) {
+        int length = sortedArray.length;
+
+        int left = 0 , right = length - 1;
+        // Use a while loop here to keep searching until exhausted (FROM 0 TO FAR RIGHT of the array)
+        while(left <= right) {                        
+            // Find the middle element, then either search left or right
+            int mid = left + (right - left) / 2;
+
+            if(sortedArray[mid] == target) {
+                return target;                          // stop here. Follow rule 1.
+            // Follow rule 2. I will START SEARCHING the LEFT SIDE.
+            } if(sortedArray[mid] < target) {
+                left = mid + 1;                         // Follow rule 3. Takbo ulit ito doon sa may mid formula kasi while loop is running
+            } else {
+                right = mid - 1;                        // Follow rule 4. Punta sa far right side of the array
+            }
+
+        }
+        return -1;                                      // If umabot dito, exhaused na yung scanning. Wala na babalik value
+
+    }
+
+
+
     public static void main(String[] args) {
         int[] toSortArr = sortArray(unsortedArr);
         System.out.println("Sorted array...");
         for(int i = 0; i < toSortArr.length; i++) {
+            // Expected: [1, 2, 4, 5, 8, 9, 10, 11, 12, 15, 18, 26]
             System.out.print(toSortArr[i] + " ");
         }
     }
