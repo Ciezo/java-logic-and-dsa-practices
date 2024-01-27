@@ -103,7 +103,7 @@ public class BinarySearchAlgorithmForSortedArray {
             int mid = left + (right - left) / 2;
 
             if(sortedArray[mid] == target) {
-                return target;                          // stop here. Follow rule 1.
+                return mid;                             // stop here. Follow rule 1.
             // Follow rule 2. I will START SEARCHING the LEFT SIDE.
             } if(sortedArray[mid] < target) {
                 left = mid + 1;                         // Follow rule 3. Takbo ulit ito doon sa may mid formula kasi while loop is running
@@ -118,12 +118,19 @@ public class BinarySearchAlgorithmForSortedArray {
 
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         int[] toSortArr = sortArray(unsortedArr);
         System.out.println("Sorted array...");
         for(int i = 0; i < toSortArr.length; i++) {
             // Expected: [1, 2, 4, 5, 8, 9, 10, 11, 12, 15, 18, 26]
             System.out.print(toSortArr[i] + " ");
         }
+
+        // Need muna matapos saglit...
+        Thread.sleep(1000);
+        
+        int result = binarySearch(toSortArr, 12);
+        // Expected: Index: 8
+        System.out.println("\nIndex: " + result);
     }
 }
