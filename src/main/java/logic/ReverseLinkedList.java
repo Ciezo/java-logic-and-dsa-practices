@@ -47,6 +47,12 @@
  * create follow the requirement.
  * </p> 
  * 
+ * 
+ * <p>
+ * Take note that it is <b>better to use the enhanced for-loop</b> (a.k.a for-each loop)
+ * <b>for better readability</b>
+ * </p>
+ * 
  */
 package main.java.logic; 
 
