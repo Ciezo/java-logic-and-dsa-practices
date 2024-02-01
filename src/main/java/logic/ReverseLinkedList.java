@@ -61,7 +61,13 @@ package main.java.logic;
  * Linked List: 5 -> 4 -> 3 -> 2 -> 1
  */
 
+
+import java.util.LinkedList;
+
 public class ReverseLinkedList {
+
+    private static LinkedList<Integer> linkedList = new LinkedList<>();
+
     public static void main(String[] args) {
          
     }
