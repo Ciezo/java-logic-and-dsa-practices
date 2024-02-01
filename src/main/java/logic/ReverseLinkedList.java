@@ -73,17 +73,13 @@ public class ReverseLinkedList {
         int[] input = {1, 2, 3, 4, 5};
         
         /**
-         * Then, we proceed to loop through that array then
-         * we add each element accordingly to our linked list
+         * Instead of using traditional for-loops. 
+         * It is better to use for-each loop.
+         * <i>for-each</i> loop is the enhanced version of traditional for loop
          */
-        System.out.println("Adding inputs to the linked list....");
-        for(int i = 0; i < input.length; i++) {
-            linkedList.add(input[i]);
-        }
-        /* Output and check */
-        System.out.println("Checking linked list...");
-        for(int j = 0; j < linkedList.size(); j++) {
-            System.out.println(linkedList.get(j));
+        System.out.println("Populating the linked list....");
+        for(Integer num : input){
+            linkedList.add(num);
         }
         
     }
