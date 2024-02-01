@@ -69,6 +69,22 @@ public class ReverseLinkedList {
     private static LinkedList<Integer> linkedList = new LinkedList<>();
 
     public static void main(String[] args) {
-         
+        /* Use an array of integers to pass the input required */
+        int[] input = {1, 2, 3, 4, 5};
+        
+        /**
+         * Then, we proceed to loop through that array then
+         * we add each element accordingly to our linked list
+         */
+        System.out.println("Adding inputs to the linked list....");
+        for(int i = 0; i < input.length; i++) {
+            linkedList.add(input[i]);
+        }
+        /* Output and check */
+        System.out.println("Checking linked list...");
+        for(int j = 0; j < linkedList.size(); j++) {
+            System.out.println(linkedList.get(j));
+        }
+        
     }
 }
