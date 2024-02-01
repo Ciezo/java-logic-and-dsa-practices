@@ -81,6 +81,11 @@ public class ReverseLinkedList {
         for(Integer num : input){
             linkedList.add(num);
         }
+
+        /* Output and check */
+        for(Integer output : linkedList) {
+            System.out.println(output);
+        }
         
     }
 }
