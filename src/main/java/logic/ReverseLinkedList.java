@@ -53,6 +53,11 @@
  * <b>for better readability</b>
  * </p>
  * 
+ * <p>
+ * <b>Important reminders about LinkedList:</b>
+ * Indices for a linked list are 0-based. It starts from <code> 0 to size() - 1 </code> 
+ * </p>
+ * 
  */
 package main.java.logic; 
 
@@ -74,6 +79,25 @@ public class ReverseLinkedList {
 
     private static LinkedList<Integer> linkedList = new LinkedList<>();
 
+
+
+    /**
+     * This method is a void type because I simply want to output
+     * the passed argument as the exercise says so.
+     * @param ll A type LinkedList<Integer> 
+     * @note This uses traditional for-loop because I believe it can be the 
+     * best use for this scenario
+     */
+    private static void reverseLinklist(LinkedList<Integer> ll) {
+        int length = ll.size();
+        // Remember that indices for a LinkedList is 0 based
+        for(int i = length - 1; i >= 0; i--) {
+            System.out.println(ll.get(i));
+        }
+    }
+
+
+
     public static void main(String[] args) {
         /* Use an array of integers to pass the input required */
         int[] input = {1, 2, 3, 4, 5};
@@ -92,6 +116,9 @@ public class ReverseLinkedList {
         for(Integer output : linkedList) {
             System.out.println(output);
         }
-        
+
+        /* Begin reversing the output by calling the function here */
+        System.out.println("Reversing the linked list");
+        reverseLinklist(linkedList);
     }
 }
