@@ -2,11 +2,16 @@
  * @author Cloyd Van Secuya
  * 
  * <p>
- * In this program, I decided to use a 2 basic for-loops to 
- * scan the given array to the function findLargest(int[] array). 
+ * For me, finding the largest element in the array is we need to sort the 
+ * array first in a descending order. 
+ * </p>
+ * 
+ * <p>
+ * Then, we proceed to compare the elements in the array using a single for-loop
  * </p>
  */
 package main.java.logic; 
+
 
 /**
  * Question 9:
@@ -23,17 +28,15 @@ public class FindLargestElementInArr {
     
     private static int[] array = {9, 7, 1, 3, 4, 6};
 
+    /**
+     * This method has a tightly coupled relationship with {@link #sortArray(int[] array)} method
+     * @param array the sorted array in descending order
+     * @return largest element of type <code>int</code>
+     */
     private static int findLargest(int[] array) {
         /* Assume here max is 0 as we did not find it yet */
         int max = 0;
         int length = array.length;
-        for(int i = 0; i < length; i++) {
-            for(int j = i + 1; j < length - 1; j++) {
-                // Compare elements
-                if(array[i] > array[j]) max = array[i];
-                if(array[j] > array[i]) max = array[j];
-            }
-        }
         return max;
     }
 
