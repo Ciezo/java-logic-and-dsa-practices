@@ -64,7 +64,6 @@ public class BasicCalculator {
         int size = rand.nextInt(11);                    // I just want to limit the testing to 10
         long[] t = new long[size];
         for(int i = 0; i < size; i++) {
-            /* @note do not remove this sout.. */
             /*
              * Copilot(free from Bing):
              * > The behavior you’re observing is not due to a problem with the runtime or compiler. It’s actually a common phenomenon related to how input/output (I/O) operations and computation 
