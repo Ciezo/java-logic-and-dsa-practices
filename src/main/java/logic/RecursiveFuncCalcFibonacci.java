@@ -16,16 +16,34 @@ package main.java.logic;
 
 /**
  * Question 8:
- * Implement a recursive function to calculate the nth Fibonacci number.
- * 
- * Input: 
- * n: 6
- * 
+ * Implement a recursive function to calculate the first 100 Fibonacci series.
+ *  
  * Output: 
- * Fibonacci: 8
+ * Fibonacci: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89...
  */
 
 public class RecursiveFuncCalcFibonacci {
+
+    private static final int SIZE = 100;
+    private static int[] fibonacciSeries = new int[SIZE];
+
+
+
+    /**
+     * 
+     * @param startElement this acts as a "starting point" for the fibonacci series to generate from 
+     * @return int[] fibonacciSeries
+     * @example fibonacci(2)
+     *          Output: 2, 3, 5, 8, 13....
+     */
+    private static int[] fibonacci(int startElement) {
+        fibonacciSeries = fibonacci(startElement);
+        return fibonacciSeries;
+    }
+
+
+
+
     public static void main(String[] args) {
          
     }
