@@ -16,7 +16,7 @@ package main.java.logic;
 
 /**
  * Question 8:
- * Implement a recursive function to calculate the first 100 Fibonacci series.
+ * Implement a recursive function to calculate the first 30 Fibonacci series.
  *  
  * Output: 
  * Fibonacci: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89...
