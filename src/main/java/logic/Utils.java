@@ -7,7 +7,7 @@ public class Utils {
      * @param array the unsorted array to sort
      * @return sorted array in descending order
      */
-    private static int[] sortArray(int[] array) {
+    static int[] sortArray(int[] array) {
         int length = array.length;
         /** I cloned the array to perform minimal changes to the param passed */
         int[] sortedArr = array.clone(); 
