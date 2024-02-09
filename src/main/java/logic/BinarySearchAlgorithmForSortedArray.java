@@ -49,7 +49,7 @@ public class BinarySearchAlgorithmForSortedArray {
     /**
      * This is an implementation of how I sort my arrays based on the principle such that, 
      * array[i] > array[j]
-     * meaning that it is arranged in an descending order
+     * meaning that it is arranged in an ascending order
      * 
      * @param array
      * @return Sorted array to be used in binary search 

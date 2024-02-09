@@ -5,7 +5,7 @@ public class Utils {
      * This is used in BinarySearchAlgorithmForSortedArray.java
      * It works!
      * @param array the unsorted array to sort
-     * @return sorted array in descending order
+     * @return sorted array in ascending order
      */
     static int[] sortArray(int[] array) {
         int length = array.length;

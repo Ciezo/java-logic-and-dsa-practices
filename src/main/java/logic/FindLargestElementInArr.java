@@ -30,13 +30,13 @@ public class FindLargestElementInArr {
 
     /**
      * This method has a tightly coupled relationship with {@link #sortArray(int[] array)} method
-     * @param array the sorted array in descending order
+     * @param array the sorted array in ascending order
      * @return largest element of type <code>int</code>
      */
     private static int findLargest(int[] array) {
-        /* Assume here max is 0 as we did not find it yet */
-        int max = 0;
         int length = array.length;
+        int[] sortedArray = Utils.sortArray(array);
+        int max = sortedArray[length-1];
         return max;
     }
 
