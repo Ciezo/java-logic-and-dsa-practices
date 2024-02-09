@@ -50,7 +50,7 @@ public class RecursiveFuncCalcFibonacci {
         int[] tempFib = new int[SIZE];
 
         tempFib[0] = startElement;  
-        tempFib[1] = startElement + 1;  
+        tempFib[1] = tempFib[0] + 1;  
         for(int i = 2; i < SIZE-1; i++) {
             tempFib[i] = tempFib[i-1] + tempFib[i-2];
         }
