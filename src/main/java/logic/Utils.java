@@ -24,4 +24,31 @@ public class Utils {
         }
         return sortedArr;
     }
+
+    /**
+     * @note We cannot use a starting element beyond 2
+     * @param startElement this acts as a "starting point" for the fibonacci series to generate from 
+     * @return int[] fibonacciSeries
+     * @example fibonacci(2)
+     *          Output: 2, 3, 5, 8, 13....
+     */
+    private static int[] fibonacci(int startElement, int SIZE) {
+        // Input validation 
+        /* Constraint: n >= 0 <= 2 */
+        if(startElement < 0 || startElement > 2) {
+            System.out.println("Invalid starting element!");
+            System.out.println("Please, enter 0 to 2!");
+            return new int[0];
+        }
+
+        int[] tempFib = new int[SIZE];
+
+        tempFib[0] = startElement;  
+        tempFib[1] = tempFib[0] + 1;  
+        for(int i = 2; i < SIZE-1; i++) {
+            tempFib[i] = tempFib[i-1] + tempFib[i-2];
+        }
+            
+        return tempFib;
+    }
 }
