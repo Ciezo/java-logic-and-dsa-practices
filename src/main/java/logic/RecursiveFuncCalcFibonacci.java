@@ -59,6 +59,53 @@ public class RecursiveFuncCalcFibonacci {
     }
 
 
+    /**
+     * @note This is the same as {@link #fibonacci(int startElement)} however it is in recursive
+     * @param startElement this acts as a "starting point" for the fibonacci series to generate from 
+     * @return int[] fibonacciSeries
+     */
+    private static int[] recursiveFib(int startElement) {
+        /**
+         * @todo Think of a possible solution here to make the {@link #fibonacci(int startElement)}
+         * as recursive
+        */
+
+        // Pseudocode
+        /*
+         * 1.check starting element, and make it is is 
+         * n >= 0; n <= 2
+         * where, n = startElement 
+         * 
+         * 2. call the recursiveFib(int startElement) to 
+         * generate the fib series. And, the startElement is updating 
+         * everytime the method is called
+         * 
+         * int tempStartElement = 0     
+         * int[] tempFib = new int[SIZE]
+         * tempFib = recursiveFib(tempStartElement)
+         * Simulate:
+         * 
+         * tempFib[0] = 0 
+         * 
+         * tempStartElement = 1
+         * tempFib = recursiveFib(tempStartElement)
+         * tempFib[1] = 1
+         * 
+         * tempStartElement = 2
+         * tempFib = recursiveFib(tempStartElement)
+         * tempFib[2] = 2
+         * 
+         * 
+         * And so on....
+         *  
+         */
+
+
+
+        return new int[0];
+    }
+
+
 
 
     public static void main(String[] args) {
