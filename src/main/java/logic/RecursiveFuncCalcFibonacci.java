@@ -83,16 +83,16 @@ public class RecursiveFuncCalcFibonacci {
 
 
     /**
-     * @note Generate a fibonacci series based on the given size from the user input
-     * @param size type <code>int</code> which can change based on the given user input
-     * @return int[size] fibonacci 
+     * @note Generate a fibonacci series based on the given length from the user input
+     * @param length type <code>length</code> which can change based on the given user input
+     * @return int[length] fibonacci 
      */
-    private static int[] fibonacciBasedOnSize(int size) {
-        int[] tempFib = new int[size];
+    private static int[] fibonacciBasedOnSize(int length) {
+        int[] tempFib = new int[length];
 
         tempFib[0] = 0;
         tempFib[1] = 1;
-        for(int i = 2; i < size; i++) {
+        for(int i = 2; i < length; i++) {
             tempFib[i] = tempFib[i-1] + tempFib[i-2];
         }
 
