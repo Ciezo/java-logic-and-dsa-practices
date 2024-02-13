@@ -41,7 +41,7 @@ public class RecursiveFuncCalcFibonacci {
     private static int[] fibonacci(int startElement) {
         // Input validation 
         /* Constraint: n >= 0 <= 2 */
-        if(startElement < 0 || startElement > 2) {
+        if(startElement < 0 && startElement > 2) {
             System.out.println("Invalid starting element!");
             System.out.println("Please, enter 0 to 2!");
             return new int[0];
@@ -105,9 +105,7 @@ public class RecursiveFuncCalcFibonacci {
         return new int[0];
     }
 
-
-
-
+    
     public static void main(String[] args) {
         System.out.println("Testing...");
         fibonacciSeries = fibonacci(2);
