@@ -59,6 +59,48 @@ public class RecursiveFuncCalcFibonacci {
     }
 
 
+
+    /**
+     * @note Using two elements, 0 and 1, we ask the user to input them and generate the fibonacci series from there
+     *       Such that, left side (i-1) + right side (i-2) will result in the next element x
+     * @param elem0 first element to add on the left side
+     * @param elem1 second element to add on the right side
+     * @return int[] fibonacciSeries
+     */
+    private static int[] fibonacci(int elem0, int elem1) {
+        int[] tempFib = new int[SIZE];
+        
+        tempFib[0] = elem0;            
+        tempFib[1] = elem1;            
+        for(int i = 2; i < SIZE-1; i++) {
+            tempFib[i] = tempFib[i-1] + tempFib[i-2];
+        }
+
+        return tempFib;
+
+    }
+
+
+
+    /**
+     * @note Generate a fibonacci series based on the given size from the user input
+     * @param size type <code>int</code> which can change based on the given user input
+     * @return int[size] fibonacci 
+     */
+    private static int[] fibonacciBasedOnSize(int size) {
+        int[] tempFib = new int[size];
+
+        tempFib[0] = 0;
+        tempFib[1] = 1;
+        for(int i = 2; i < size; i++) {
+            tempFib[i] = tempFib[i-1] + tempFib[i-2];
+        }
+
+        return tempFib;
+    }
+    
+
+
     /**
      * @note This is the same as {@link #fibonacci(int startElement)} however it is in recursive
      * @param startElement this acts as a "starting point" for the fibonacci series to generate from 
