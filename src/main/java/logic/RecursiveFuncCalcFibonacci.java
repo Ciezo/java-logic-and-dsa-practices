@@ -104,14 +104,23 @@ public class RecursiveFuncCalcFibonacci {
     /**
      * @note This is the same as {@link #fibonacci(int startElement)} however it is in recursive
      * @param startElement this acts as a "starting point" for the fibonacci series to generate from 
+     * @param length to limit how many elements are generated in the series
      * @return int[] fibonacciSeries
      */
-    private static int[] recursiveFib(int startElement) {
+    private static int[] recursiveFib(int startElement, int length) {
         /**
          * @todo Think of a possible solution here to make the {@link #fibonacci(int startElement)}
          * as recursive
         */
-
+        int[] tempFib = new int[length];
+        int tempStartElement;                                 // copy of start element. Used as a swap var
+        int tempLength = length;                             // copy of length. Used as swap var
+        // Input validation
+        if(startElement < 0 && startElement > 2) {
+            System.out.println("Invalid starting element!");
+            System.out.println("Please, enter 0 to 2!");
+            return new int[0];
+        }
         // Pseudocode
         /*
          * 1.check starting element, and make it is is 
@@ -123,7 +132,7 @@ public class RecursiveFuncCalcFibonacci {
          * everytime the method is called
          * 
          * int tempStartElement = 0     
-         * int[] tempFib = new int[SIZE]
+         * int[] tempFib = new int[length]
          * tempFib = recursiveFib(tempStartElement)
          * Simulate:
          * 
@@ -142,9 +151,24 @@ public class RecursiveFuncCalcFibonacci {
          *  
          */
 
+        /* tempStartElement is used as a swap to update the 
+        start element in the recursive method calls */
+        tempStartElement = startElement;
+        tempFib[0] = startElement;
+        tempStartElement = tempFib[0];
+        tempFib[1] = tempFib[0] + 1;
+        tempStartElement = tempFib[1];
+        for(int i = 2; i < length; i++) {
+            tempFib[i] = tempFib[i-1] + tempFib[i-2];
+            tempStartElement = tempFib[i];   
+            tempLength = length;
+        } recursiveFib(tempStartElement, tempLength);
+        // for (int elem : tempFib) {
+        //     tempFib = recursiveFib(tempStartElement, length);
+        // }      
 
 
-        return new int[0];
+        return tempFib;
     }
 
     
