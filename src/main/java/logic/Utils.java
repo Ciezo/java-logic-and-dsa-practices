@@ -7,7 +7,7 @@ public class Utils {
      * @param array the unsorted array to sort
      * @return sorted array in ascending order
      */
-    static int[] sortArray(int[] array) {
+    public static int[] sortArray(int[] array) {
         int length = array.length;
         /** I cloned the array to perform minimal changes to the param passed */
         int[] sortedArr = array.clone(); 
@@ -32,7 +32,7 @@ public class Utils {
      * @example fibonacci(2)
      *          Output: 2, 3, 5, 8, 13....
      */
-    private static int[] fibonacci(int startElement, int SIZE) {
+    public static int[] fibonacci(int startElement, int SIZE) {
         // Input validation 
         /* Constraint: n >= 0 <= 2 */
         if(startElement < 0 || startElement > 2) {
@@ -68,5 +68,149 @@ public class Utils {
             }
         }
         return twoDimArray;
+    }
+
+
+    public class Stack {
+
+        /**
+         * @note To use this Class the size of the stack must be 
+         * declared first using {@link #setStackSize(int MAXSIZE)}
+         */    
+        
+        /* MAXSIZE is declared as part of a Stack object */
+        private static int MAXSIZE;
+        /* Represents the "pointer" of our most recently inserted element */
+        private static int top = -1;
+
+
+
+        /**
+         * Set a MAXSIZE for the stack
+         * @param MAXSIZE
+         */
+        public void setStackSize(int MAXSIZE) {
+            Stack.MAXSIZE = MAXSIZE;
+        }
+
+
+
+        /**
+         * Push elements in the empty stack
+         * @param data or element to use in populating the empty stack
+         * @param stack an array of empty stack
+         * @return most recent or top element in the stack
+         */
+        public static int push(int data, int[] stack) {
+            // First, check if the stack is full
+            boolean isStackfull = isFull(stack);
+            if (!(isStackfull)) {
+                // If not full, then we can begin inserting data
+                top = top + 1;      // Make it to 0 as most recently inserted element
+                stack[top] = data;
+            } else {
+                // Otherwise, prompt the user to say stack is full
+                System.out.println("Stack is now full! \n Please, try again!");
+            } 
+            
+            return data; 
+        }
+
+
+
+        /**
+         * Remove an element from the stack by subsituting 0
+         * @param stack of an array type
+         * @return data or element removed
+         */
+        public static int pop(int[] stack) {
+            /**
+             * @todo I still don't know what is the best way 
+             * to remove an element from the stack without
+             * using 0 as substitute.
+             */
+            int substituteData = 0;
+            boolean isStackEmpty = isEmpty(stack);
+            if(!(isStackEmpty)) {
+                /**
+                 * Remember that to define the most recently inserted element
+                 * using top variable, it should be assigned as,
+                 * top = -1
+                 * where, -1, indicates the most recently inserted element
+                 */
+                // Get to the recently inserted element
+                stack[top] = substituteData;
+                return substituteData;
+            } else { 
+                System.out.println("Stack is empty! Cannot perform pop()");
+                return 0;
+            }
+        }
+
+
+
+        /**
+         * Get the most recently inserted element, top, in the stack
+         * @param stack of array type
+         * @return top element of type int
+         */
+        public static int peek(int[] stack) {
+            /**
+             * Before returning the topmost element.
+             * I must check the stack if it is empty
+             */
+            boolean isStackEmpty = isEmpty(stack);
+            if(!(isStackEmpty)) {
+                return stack[top]; 
+            } else {
+                System.out.println("Stack is empty! \n Cannot return topmost element");
+                return 0;
+            }
+        }
+
+
+
+        /**
+         * Check the stack if it is full
+         * @param stack a populated or empty stack
+         * @return true if stack is full, otherwise false if not.
+         */
+        public static boolean isFull(int[] stack) {
+            int capacity = size(stack); 
+            if (capacity > MAXSIZE) {
+                return true; 
+            } else {
+                return false; 
+            }
+        }
+
+
+        
+        /**
+         * Checks if the stack is empty or null
+         * @param stack of an array type
+         * @return true if the given stack is empty, otherwise false if not
+         */
+        public static boolean isEmpty(int[] stack) {
+            int capacity = stack.length; 
+            if (capacity == 0 || capacity < 0) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+
+        /**
+         * This method has tight-coupling with isFull(int[] stack)
+         * because it simply returns the capacity of the stack for better 
+         * readability and simple abstraction
+         * @param stack 
+         * @return capacity or size of the stack
+         */
+        public static int size(int[] stack) {
+            int capacity = stack.length; 
+            return capacity;  
+        }
     }
 }

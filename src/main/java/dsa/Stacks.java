@@ -51,6 +51,12 @@ public class Stacks {
     private static int top = -1;
 
 
+    /**
+     * Push elements in the empty stack
+     * @param data or element to use in populating the empty stack
+     * @param stack an array of empty stack
+     * @return most recent or top element in the stack
+     */
     private static int push(int data, int[] stack) {
         // First, check if the stack is full
         boolean isStackfull = isFull(stack);
@@ -69,6 +75,11 @@ public class Stacks {
 
 
 
+    /**
+     * Remove an element from the stack by subsituting 0
+     * @param stack of an array type
+     * @return data or element removed
+     */
     private static int pop(int[] stack) {
         /**
          * @todo I still don't know what is the best way 
@@ -94,7 +105,11 @@ public class Stacks {
     }
 
 
-
+    /**
+     * Get the most recently inserted element, top, in the stack
+     * @param stack of array type
+     * @return top element of type int
+     */
     private static int peek(int[] stack) {
         /**
          * Before returning the topmost element.
@@ -111,6 +126,11 @@ public class Stacks {
 
 
 
+    /**
+     * Check the stack if it is full
+     * @param stack a populated or empty stack
+     * @return true if stack is full, otherwise false if not.
+     */
     private static boolean isFull(int[] stack) {
         int capacity = size(stack); 
         if (capacity > MAXSIZE) {
@@ -122,6 +142,11 @@ public class Stacks {
     
 
 
+    /**
+     * Checks if the stack is empty or null
+     * @param stack of an array type
+     * @return true if the given stack is empty, otherwise false if not
+     */
     private static boolean isEmpty(int[] stack) {
         int capacity = stack.length; 
         if (capacity == 0 || capacity < 0) {
@@ -132,7 +157,13 @@ public class Stacks {
     }
 
 
-
+    /**
+     * This method has tight-coupling with isFull(int[] stack)
+     * because it simply returns the capacity of the stack for better 
+     * readability and simple abstraction
+     * @param stack 
+     * @return capacity or size of the stack
+     */
     private static int size(int[] stack) {
         int capacity = stack.length; 
         return capacity;  
