@@ -2,6 +2,10 @@
  * @author Cloyd Van Secuya
  * 
  * <p>
+ * <b>The stack data strucutre follows the LIFO</b>
+ * </p>
+ * 
+ * <p>
  * A <b>stack</b> is a linear data structure where insertions and deletions 
  * are only done at the end of the stack, called "top of the stack".
  * </p>
