@@ -1,16 +1,23 @@
 /**
  * @author Cloyd Van Secuya
  * 
- * This is to review and explore the primitive data types, Arrays 
- * using the Java programming language.
- * 
+ * <p>
+ * This is to review and explore the basic data structure, Arrays, 
+ * using the Java programming language. 
+ * </p>
+ *
+ * <p>
  * The point of this Class file is to explore different ways to 
  * initialize, assign, and declare arrays in Java with their 
  * respective elements.
+ * </p>
  * 
+ * <p>
  * I also just want to review and revisit this topic again.
+ * <b>I did this before, but I want to review again</b>
  * Take note that what I did here is my way of understanding and implementations
  * user input and Arrays
+ * </p>
  * 
  * <p>
  * This is a practice and it explores how we can navigate
@@ -18,7 +25,7 @@
  * This Class also adopts the <i>overloading</i> of method promptUserAndCheckInput(){}
  * <b>overloading</b> is one of the principles of Object-Oriented Programming
  * we try to use the same method name, but can be used with different arguments. 
- * <p>
+ * </p>
  * 
  * <p>
  * promptUserAndCheckInput(param, param){...}
