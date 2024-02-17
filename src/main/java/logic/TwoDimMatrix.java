@@ -9,7 +9,7 @@
 package main.java.logic; 
 
 /**
- * Question 5:
+ * Question 11:
  * Given a matrix, write a program to rotate it by 90 degrees.
  * 
  * Input: 
@@ -54,6 +54,22 @@ public class TwoDimMatrix {
         return twoDimArray;
     }
  
+    /**
+     * Rotate the matrix into 90-degress to right
+     * @param rows number of specified rows
+     * @param columns number of specified columns
+     * @param twoDimArray 2D array to rotate
+     * @return rotated matrix
+     */
+    private static int[][] rotateMatrix(int rows, int columns, int[][] twoDimArray) {
+        int[][] rotatedMatrix = new int[rows][columns]; 
+        return rotatedMatrix;
+         /**
+         * @todo February 17, 2024
+         * - Figure out how to rotate the 2D array by 90-degress right.
+         * - Position the elements accordingly 
+         */
+    }
 
 
     public static void main(String[] args) {
