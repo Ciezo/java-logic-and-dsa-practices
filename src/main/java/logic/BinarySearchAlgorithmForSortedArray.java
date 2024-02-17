@@ -76,7 +76,7 @@ public class BinarySearchAlgorithmForSortedArray {
     /**
      * Now, according to what I have searched it is highly recommended that 
      * we sort the binary array, and in this case I have a procedure to do that 
-     * @link #sortArray(int[] array)}
+     * {@link #sortArray(int[] array)}
      * 
      * @param sortedArray
      * @param target

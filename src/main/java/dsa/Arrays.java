@@ -38,7 +38,7 @@
  * The <code>String tempInputHolder</code> is simply a 
  * temporary holder of values for our user input. 
  * This gets overrided by whenever the <code>promptUserAndCheckInput(){}</code> is called.
- * It is always being replaced with {@link #promptUserAndCheckInput(param, param)} method
+ * It is always being replaced with {@link #promptUserAndCheckInput(String message, String[] array)} method
  * using the <code>tempInputHolder = sc.nextLine();</code>
  * </p>
  */
