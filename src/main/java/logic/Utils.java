@@ -51,4 +51,22 @@ public class Utils {
             
         return tempFib;
     }
+
+    /**
+     * Populate the two dimensional array using a one dimensional array
+     * @param twoDimArray the empty 2D array
+     * @param values the single-dimensional array to be used to populate the empty 2D array
+     * @return populated two dimensional array
+     */
+    public static int[][] populateMatrix(int rows, int columns, int[][] twoDimArray, int[] values) {
+        int counter = 0; 
+        for(int i = 0; i < rows; i++) {
+            for(int j = 0; j < columns; j++) {
+                twoDimArray[i][j] = values[counter];
+                counter++;
+                if(counter == values.length) break;
+            }
+        }
+        return twoDimArray;
+    }
 }
