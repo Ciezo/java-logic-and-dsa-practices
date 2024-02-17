@@ -25,5 +25,15 @@
 package main.java.dsa;
 
 public class Queues {
+
+    private static int head = 0;
+    private static int tail = -1;
+    private static int[] exampleQueue = {1, 2, 3, 4, 5, 6};
+    private static int length = exampleQueue.length;
+    public static void main(String[] args) {
+        System.out.println("Length of the queue: " + length);
+        System.out.println(exampleQueue[head]);
+        System.out.println(exampleQueue[tail+length]);
+    }
     
 }
