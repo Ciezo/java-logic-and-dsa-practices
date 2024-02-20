@@ -34,35 +34,66 @@
  * In this Class, I am to implement a queue data strucutre without relying on Java Collections
  * library. <b>I need to understand and master the fundamentals</b>
  * </p>
+ * 
+ * References: 
+ * https://www.geeksforgeeks.org/queue-data-structure/ 
  */
 package main.java.dsa;
 
 public class Queues {
 
+    private static final int MAX_LENGTH = 10;
     private static int head = 0;
     private static int tail = -1;
-    private static int[] exampleQueue = {1, 2, 3, 4, 5, 6};
-    private static int length = exampleQueue.length;
+    private static int[] myQueue = new int[MAX_LENGTH]; 
 
 
-    private static void enqueue() {
-        /**
-         * @todo - February 18, 2024
-         * - Research and implement the basic enqueue operation
-         */
+
+    private static boolean isEmpty(int[] queue) {
+        return false;
     }
 
-    private static void dequeue(){
+
+
+    private static boolean isFull(int[] queue) {
+        
+        return false;
+    }
+
+
+
+    /**
+     * Inserting elements at the rear of queue.
+     * @param element to insert of type int
+     */
+    private static void enqueue(int element) {
+        if((isEmpty(myQueue)) && (isFull(myQueue))) {
+            myQueue[tail+MAX_LENGTH] = element;
+        } 
+    }
+
+
+
+    private static void dequeue(int element){
         /**
          * @todo - February 18, 2024
          * - Research and implement the basic dequeue operation
          */
     }
 
-    public static void main(String[] args) {
-        System.out.println("Length of the queue: " + length);
-        System.out.println(exampleQueue[head]);
-        System.out.println(exampleQueue[tail+length]);
+
+    
+    public static void main(String[] args) { 
+        enqueue(3);
+        enqueue(6);
+        enqueue(9);
+
+        /**
+         * Check the user queue here
+         */
+        System.out.println("Maximum length of the queue: " + MAX_LENGTH);
+        System.out.println(myQueue[head]);
+        System.out.println(myQueue[tail+MAX_LENGTH]);
     }
     
 }
