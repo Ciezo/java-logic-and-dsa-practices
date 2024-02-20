@@ -49,7 +49,15 @@ public class Queues {
 
 
 
+    /**
+     * Checks if the user queue is empty. 
+     * In this case, "empty" means 0, and the tail pointer is -1. 
+     * @param queue user queue
+     * @return true if empty, otherwise false;
+     */
     private static boolean isEmpty(int[] queue) {
+        if(queue[tail] == 0 && tail == -1) 
+            return true;
         return false;
     }
 
