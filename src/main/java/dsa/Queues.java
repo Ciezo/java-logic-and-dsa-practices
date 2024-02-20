@@ -84,9 +84,19 @@ public class Queues {
     /**
      * Inserting elements at the rear of queue.
      * @param element to insert of type int
+     * @param queue the declared user's queue to use from
+     * @return user's queue with the most recently inserted element
      */
-    private static void enqueue(int element) {
-        myQueue[tail+length] = element;
+    private static int[] enqueue(int element, int[] queue) {
+        if((isFull(queue)) && isEmpty()) {
+            queue[tail+length] = element;
+            head = queue[tail];
+            tail = -1;
+        } else {
+            System.out.println("Queue is full! Cannot insert elements.");
+            return new int[0];
+        }
+        return queue;
     }
 
 
@@ -101,9 +111,9 @@ public class Queues {
 
 
     public static void main(String[] args) { 
-        enqueue(3);
-        enqueue(6);
-        enqueue(9);
+        enqueue(3, myQueue);
+        enqueue(6, myQueue);
+        enqueue(9, myQueue);
 
         /**
          * Check the user queue here
