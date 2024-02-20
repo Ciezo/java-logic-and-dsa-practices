@@ -63,7 +63,19 @@ public class Queues {
 
 
 
+    /**
+     * Check if the queue is full, by that it means 
+     * the elements inside the queue has exceeded 
+     * the defined user length.
+     * @param queue the user's queue
+     * @return true if user's queue is full, otherwise false
+     */
     private static boolean isFull(int[] queue) {   
+        if (queue.length > length) {
+            /** Change value of tail to 1 since there is no space left */
+            tail = 1;
+            return true;
+        }
         return false;
     }
 
@@ -74,9 +86,7 @@ public class Queues {
      * @param element to insert of type int
      */
     private static void enqueue(int element) {
-        if((isEmpty(myQueue)) && (isFull(myQueue))) {
-            myQueue[tail+length] = element;
-        } 
+        myQueue[tail+length] = element;
     }
 
 
