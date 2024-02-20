@@ -93,19 +93,29 @@ public class Queues {
             head = queue[tail];
             tail = -1;
         } else {
-            System.out.println("Queue is full! Cannot insert elements.");
+            System.out.println("Queue is full or empty ! Cannot insert elements.");
             return new int[0];
         }
         return queue;
     }
 
 
-
-    private static void dequeue(int element){
-        /**
-         * @todo - February 18, 2024
-         * - Research and implement the basic dequeue operation
-         */
+    /**
+     * Removing elements at the head or the front. 
+     * In removing the elements from the queue, 
+     * a value of 0 must be substituted.
+     * @param queue the user's queue.
+     * @return int[] queue with the remaining elements. 
+     */
+    private static int[] dequeue(int[] queue){
+        if(isEmpty()) {
+            head = 0;
+            queue[head] = 0;
+        } else {
+            System.out.println("Queue is empty! Cannot remove elements.");
+            return new int[0];
+        }
+        return queue;
     }
 
 
