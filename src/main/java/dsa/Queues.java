@@ -22,6 +22,7 @@
  *  <li>Dequeue - it happens at the "head" of the queue where an element is removed.</li>
  *  <li>isEmpty - checks if the queue is empty</li>
  *  <li>isFull - checks if the queue is full</li>
+ *  <li>front or peek - returns the value from the front of the queue</li>
  * </ol>
  * 
  * <p>
@@ -59,9 +60,10 @@ public class Queues {
         return false;
     }
 
+    private static int peek() {
+        return front; 
+    }
 
-
-    
     private static void enqueue() {
         
     }
