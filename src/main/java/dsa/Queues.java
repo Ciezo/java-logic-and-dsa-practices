@@ -39,6 +39,7 @@
  * 
  * References: 
  * https://www.geeksforgeeks.org/queue-data-structure/ 
+ * https://www.freecodecamp.org/news/queue-data-structure-definition-and-java-example-code/
  */
 package main.java.dsa;
 
