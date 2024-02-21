@@ -47,7 +47,7 @@ package main.java.dsa;
 public class Queues {
 
     private static int SIZE = 10;
-    private static int front = 0;
+    private static int front = -1;
     private static int rear = -1;
     private static int[] myQueue = new int[SIZE]; 
 
@@ -60,8 +60,8 @@ public class Queues {
         return false;
     }
 
-    private static int peek() {
-        return front; 
+    private static int peek(int[] queue) {
+        return queue[front + 1]; 
     }
 
     private static void enqueue() {
