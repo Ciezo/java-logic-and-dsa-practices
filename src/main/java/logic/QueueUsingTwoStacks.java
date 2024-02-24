@@ -55,7 +55,34 @@ package main.java.logic;
  */
 
 public class QueueUsingTwoStacks {
+
+    private static final int STACK_SIZE_A = 5;
+    private static final int STACK_SIZE_B = 5;
+    private static int[] stackA = new int[STACK_SIZE_A]; 
+    private static int[] stackB = new int[STACK_SIZE_B]; 
+
     public static void main(String[] args) {
-         
+        // Push elements to Stack A
+        Utils.Stack.setStackSize(STACK_SIZE_A);
+        Utils.Stack.push(1, stackA);     
+        Utils.Stack.push(2, stackA);     
+        Utils.Stack.push(3, stackA);     
+        Utils.Stack.push(4, stackA);     
+        Utils.Stack.push(5, stackA);     
+
+        Utils.Stack.display(stackA);
+        
+        /**
+         * @todo February 29, 2024 
+         * - Redesign the Utils.Stack class into OOP 
+         */
+
+        // Push elements to Stack B
+        // Utils.Stack.setStackSize(STACK_SIZE_B);
+        // Utils.Stack.push(6, stackB);     
+        // Utils.Stack.push(7, stackB);     
+        // Utils.Stack.push(8, stackB);     
+        // Utils.Stack.push(9, stackB);     
+        // Utils.Stack.push(10, stackB);     
     }
 }

@@ -74,6 +74,14 @@ public class Utils {
     public class Stack {
 
         /**
+         * @todo February 24, 2024 
+         * Redesign this class into OOP.
+         * I cannot rely so much on static class to expose methods 
+         * <b>It is much better to design this in OOP to create multiple 
+         * instances of this class</b>
+         */
+
+        /**
          * @note To use this Class the size of the stack must be 
          * declared first using {@link #setStackSize(int MAXSIZE)}
          */    
@@ -89,7 +97,7 @@ public class Utils {
          * Set a MAXSIZE for the stack
          * @param MAXSIZE
          */
-        public void setStackSize(int MAXSIZE) {
+        public static void setStackSize(int MAXSIZE) {
             Stack.MAXSIZE = MAXSIZE;
         }
 
@@ -211,6 +219,17 @@ public class Utils {
         public static int size(int[] stack) {
             int capacity = stack.length; 
             return capacity;  
+        }
+
+        /**
+         * Prints out the stack into the console
+         * @param stack of type int[] 
+         */
+        public static void display(int[] stack) {
+            System.out.println("Stack elements: ");
+            for(int elem : stack) {
+                System.out.println(elem);
+            }
         }
     }
 }
