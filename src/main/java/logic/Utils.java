@@ -74,14 +74,6 @@ public class Utils {
     public class Stack {
 
         /**
-         * @todo February 24, 2024 
-         * Redesign this class into OOP.
-         * I cannot rely so much on static class to expose methods 
-         * <b>It is much better to design this in OOP to create multiple 
-         * instances of this class</b>
-         */
-
-        /**
          * @note To use this Class the size of the stack must be 
          * declared first using {@link #setStackSize(int MAXSIZE)}
          */    

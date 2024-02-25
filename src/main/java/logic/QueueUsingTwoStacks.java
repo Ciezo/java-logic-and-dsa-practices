@@ -39,7 +39,7 @@
  * Implement this concept or idea as my practice.
  * </p>
  */
-package main.java.logic; 
+package main.java.logic;
 
 /**
  * Question 12:
@@ -63,14 +63,14 @@ public class QueueUsingTwoStacks {
 
     public static void main(String[] args) {
         // Push elements to Stack A
-        Utils.Stack.setStackSize(STACK_SIZE_A);
-        Utils.Stack.push(1, stackA);     
-        Utils.Stack.push(2, stackA);     
-        Utils.Stack.push(3, stackA);     
-        Utils.Stack.push(4, stackA);     
-        Utils.Stack.push(5, stackA);     
+        // Utils.Stack.setStackSize(STACK_SIZE_A);
+        // Utils.Stack.push(1, stackA);     
+        // Utils.Stack.push(2, stackA);     
+        // Utils.Stack.push(3, stackA);     
+        // Utils.Stack.push(4, stackA);     
+        // Utils.Stack.push(5, stackA);     
 
-        Utils.Stack.display(stackA);
+        // Utils.Stack.display(stackA);
         
         /**
          * @todo February 29, 2024 
