@@ -41,6 +41,8 @@
  */
 package main.java.logic;
 
+import java.util.Random;
+
 /**
  * Question 12:
  * Implement a queue using two stacks.
@@ -54,35 +56,55 @@ package main.java.logic;
  * Queue: [2]
  */
 
+import main.java.dsa.utils.Stack;
+
 public class QueueUsingTwoStacks {
 
-    private static final int STACK_SIZE_A = 5;
-    private static final int STACK_SIZE_B = 5;
-    private static int[] stackA = new int[STACK_SIZE_A]; 
-    private static int[] stackB = new int[STACK_SIZE_B]; 
+    private static int[] STACK_A = new int[5];
+    private static int[] STACK_B = new int[5];
+    private static int STACK_SIZE_A = 5;
+    private static int STACK_SIZE_B = 5;
+
+    /**
+     * @return 5 numbers of <int> type as data elements to use
+     */
+    private static int[] data() {
+        Random r = new Random();
+        // limit the number of data inputs to 5 only
+        int[] dataToReturn = new int[5]; 
+        for(int i = 0; i < 5; i++) {
+            dataToReturn[i] = Math.abs(r.nextInt(100));
+        }
+        // Once data is populated we return
+        return dataToReturn;
+    }
 
     public static void main(String[] args) {
+        Stack s; 
+        int[] elem = data();
+
         // Push elements to Stack A
-        // Utils.Stack.setStackSize(STACK_SIZE_A);
-        // Utils.Stack.push(1, stackA);     
-        // Utils.Stack.push(2, stackA);     
-        // Utils.Stack.push(3, stackA);     
-        // Utils.Stack.push(4, stackA);     
-        // Utils.Stack.push(5, stackA);     
-
-        // Utils.Stack.display(stackA);
+        s = new Stack(STACK_SIZE_A);
+        s.push(elem[0], STACK_A);
+        s.push(elem[1], STACK_A);
+        s.push(elem[2], STACK_A);
+        s.push(elem[3], STACK_A);
+        s.push(elem[4], STACK_A);
         
-        /**
-         * @todo February 29, 2024 
-         * - Redesign the Utils.Stack class into OOP 
-         */
-
         // Push elements to Stack B
-        // Utils.Stack.setStackSize(STACK_SIZE_B);
-        // Utils.Stack.push(6, stackB);     
-        // Utils.Stack.push(7, stackB);     
-        // Utils.Stack.push(8, stackB);     
-        // Utils.Stack.push(9, stackB);     
-        // Utils.Stack.push(10, stackB);     
+        elem = data();
+        s = new Stack(STACK_SIZE_B);
+        s.push(elem[0], STACK_B);
+        s.push(elem[1], STACK_B);
+        s.push(elem[2], STACK_B);
+        s.push(elem[3], STACK_B);
+        s.push(elem[4], STACK_B);
+
+        // Display the outputs
+        // Stack A
+        s.display(STACK_A);
+        // Stack B
+        s.display(STACK_B);
+
     }
 }
