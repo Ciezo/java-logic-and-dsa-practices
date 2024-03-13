@@ -46,14 +46,6 @@ import java.util.Random;
 /**
  * Question 12:
  * Implement a queue using two stacks.
- * 
- * Input: 
- * enqueue(1)
- * enqueue(2)
- * dequeue()
- * 
- * Output: 
- * Queue: [2]
  */
 
 import main.java.dsa.utils.Stack;
@@ -120,7 +112,7 @@ public class QueueUsingTwoStacks {
             System.out.println("No items to display!");
         } else {    
             for(int i = 0; i <= back; i++) {
-                System.out.println(queue[i]);
+                System.out.print(queue[i] + " ");
             }
         }
         
@@ -161,20 +153,16 @@ public class QueueUsingTwoStacks {
 
         // Push elements to Stack A
         s = new Stack(STACK_SIZE_A);
-        s.push(elem[0], STACK_A);
-        s.push(elem[1], STACK_A);
-        s.push(elem[2], STACK_A);
-        s.push(elem[3], STACK_A);
-        s.push(elem[4], STACK_A);
+        for(int i = 0; i < STACK_SIZE_A; i++) {
+            s.push(elem[i], STACK_A);
+        }
         
         // Push elements to Stack B
         elem = data();
         s = new Stack(STACK_SIZE_B);
-        s.push(elem[0], STACK_B);
-        s.push(elem[1], STACK_B);
-        s.push(elem[2], STACK_B);
-        s.push(elem[3], STACK_B);
-        s.push(elem[4], STACK_B);
+        for(int i = 0; i < STACK_SIZE_B; i++) {
+            s.push(elem[i], STACK_B);
+        }
 
         // Display the outputs
         // Stack A
@@ -183,8 +171,7 @@ public class QueueUsingTwoStacks {
         s.display(STACK_B);
 
         /**
-         * @TODO 
-         * - Create queue from the two stacks.
+         * Display the queue made from Stack A and Stack B
          */
         System.out.println("Creating a queue from Stack A");
         for(int i = 0; i < STACK_A.length; i++) {
@@ -203,5 +190,10 @@ public class QueueUsingTwoStacks {
         for(int i = 0; i < STACK_A.length; i++) {
             enqueue(STACK_B[i]);
         }
+
+        Thread.sleep(1000);
+
+        System.out.println("Final Queue"); 
+        display();
     }
 }
