@@ -28,6 +28,7 @@
  * 
  * <p>
  * References:
+ * https://stackoverflow.com/questions/73702009/finding-the-pivot-point-for-the-given-array-java
  * <a href="https://shorturl.at/hmnK0">Calculating the median value</a>
  * </p>
  */
