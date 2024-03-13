@@ -67,6 +67,10 @@ public class FindingPivotInArr {
         /**
          * Partitioning the array */
         // Scan the array from both ends (left and right)
+        /**
+         * @TODO
+         * fix the conditions...
+         */
         for(int i = 0; i < arr.length; i++) {
             if(left < right) {
                 // Move towards right using left pointer...
