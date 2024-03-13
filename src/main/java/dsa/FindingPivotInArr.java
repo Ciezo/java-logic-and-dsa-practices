@@ -67,39 +67,40 @@ public class FindingPivotInArr {
         /**
          * Partitioning the array */
         // Scan the array from both ends (left and right)
-        if(left < right) {
-            // Move towards right using left pointer...
-            if(left < right && arr[left] <= pivot) {
-                left++;
-            } 
-
-            // Move towards left using right pointer...
-            if(right < left && arr[right] <= pivot) {
-                right--;
+        for(int i = 0; i < arr.length; i++) {
+            if(left < right) {
+                // Move towards right using left pointer...
+                if(left < right && arr[left] <= pivot) {
+                    left++;
+                } 
+    
+                // Move towards left using right pointer...
+                if(right > left && arr[right] <= pivot) {
+                    right--;
+                }
+    
+                // Swap elements in the partitioning process
+                /**
+                 * Here we check if the left pointer has not crossed
+                 * the right pointer.
+                 * 
+                 * The goal here is to assign elements on the left side
+                 * which are less than or equal to the pivot.
+                 * And, on the right, elements are assigned which are 
+                 * greater than or equal to the pivot element.
+                 * 
+                 * 
+                 * TLDR: 
+                 * - left side HAS ELEMENTS LESS THAN OR EQUAL THAN PIVOT 
+                 * - right side HAS ELEMENTS GREATHER THAN OR EQUAL THAN PIVOT
+                 */
+                System.out.println("Swapping...");
+                if (left < right) {
+                    int temp = arr[left];
+                    arr[left] = arr[right];
+                    arr[right] = temp;
+                } 
             }
-
-            // Swap elements in the partitioning process
-            /**
-             * Here we check if the left pointer has not crossed
-             * the right pointer.
-             * 
-             * The goal here is to assign elements on the left side
-             * which are less than or equal to the pivot.
-             * And, on the right, elements are assigned which are 
-             * greater than or equal to the pivot element.
-             * 
-             * 
-             * TLDR: 
-             * - left side HAS ELEMENTS LESS THAN OR EQUAL THAN PIVOT 
-             * - right side HAS ELEMENTS GREATHER THAN OR EQUAL THAN PIVOT
-             */
-            System.out.println("Swapping...");
-            if (left < right) {
-                int temp = arr[left];
-                arr[left] = arr[right];
-                arr[right] = temp;
-            } 
-
         }
 
         /**
