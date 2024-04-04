@@ -49,6 +49,8 @@ public class FindCommonElementsBetwArr {
 
     /**
      * Find common elements between two arrays using an ArrayList<Integer> type.
+     * This method does not have any size limit as to how much common elements 
+     * it can store and return. 
      * <b>This is in quadratic time complexity.</b> 
      * It is because there are two nested for-loops
      * @param arr1 type int[], compare against arr2 
@@ -85,6 +87,7 @@ public class FindCommonElementsBetwArr {
      */
     private static int[] getCommonElements(int[] arr1, int[] arr2) {
         // This is much explicit because we are expected to have N of common elements.
+        // where N = 2.
         int[] commonElements = new int[2];
         
         // index to commontElements[count]
