@@ -32,7 +32,19 @@ public class ArrayLists {
 
     private static ArrayList<Integer> phoneNumbers = new ArrayList<>();
 
-
+    /* Challenge: 
+     * You are tasked with creating a phone number management system using an ArrayList. Here are the requirements:
+     *      1. Add Phone Numbers: Implement a method that allows adding phone numbers to the list. 
+     *         The method should take an integer (representing a phone number) as an argument and add it to the phoneNumbers list.
+     * 
+     *      2. Remove Phone Numbers: Create another method to remove a phone number from the list. 
+     *         The method should take an integer (the phone number to be removed) and delete it from the list.
+     *      
+     *      3. Check if a Phone Number Exists: Implement a method that checks whether a given phone number exists in the list. 
+     *         The method should take an integer (the phone number to check) and return true if it’s in the list, or false otherwise.
+     * 
+     *      4. Print All Phone Numbers: Write a method that prints all the phone numbers currently stored in the phoneNumbers list.
+     */
 
     /**
      * Allows to add phone number to the list, phoneNumbers : ArrayList<Integer>
