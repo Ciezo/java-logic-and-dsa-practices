@@ -51,18 +51,16 @@ public class ArrayLists {
      * @param phoneNumber
      */
     private static void addPhoneNumber(int phoneNumber) {
-        int temp = phoneNumber; 
-
         // Validate if the phoneNumber is of type int
-        if(!(temp == (int) temp)) 
+        if(!(phoneNumber == (int) phoneNumber)) 
             System.out.println("Please, enter a valid number. It must be type int");
 
         // Validate if the entry is a duplicate.
         // This ensures that all phone entries are unique
-        if(!(isDuplicate(temp))) {
-            System.out.println("Adding phone number: " + temp);
-            phoneNumbers.add(temp);
-        } else System.out.println("The phone number, " + temp + " already exists!");
+        if(!(isDuplicate(phoneNumber))) {
+            System.out.println("Adding phone number: " + phoneNumber);
+            phoneNumbers.add(phoneNumber);
+        } else System.out.println("The phone number, " + phoneNumber + " already exists!");
         
     }
 
@@ -71,19 +69,10 @@ public class ArrayLists {
     /**
      * Checks if there is a duplicate phone number. 
      * This allows the phone directory to have unique entries. 
-     * @return false if there are not duplicates found, otherwise true.
+     * @return true if there is a duplicate found, otherwise false.
      */
     private static boolean isDuplicate(int phoneNumber) {
-        boolean flag = false;
-        int length = phoneNumbers.size();
-        
-        for(int i = 0; i < length; i++) {
-            if(phoneNumber == phoneNumbers.get(i)) {
-                flag = true;
-            }
-        }
-
-        return flag;
+        return phoneNumbers.contains(phoneNumber);
     }
 
 
@@ -113,18 +102,14 @@ public class ArrayLists {
      * @param phoneNumber
      */
     private static void deletePhoneNumber(int phoneNumber) {
-        int numberToRemove = phoneNumber;
-        int length = phoneNumbers.size();
+        int indexToRemove = phoneNumbers.indexOf(phoneNumber);
 
-        // If the phone number exists, then we can remove it
-        if(isPhoneNumberExist(numberToRemove)) {
-            for(int i = 0; i < length; i++) {
-                if(numberToRemove == phoneNumbers.get(i)) {
-                    System.out.println("Deleting phone number: " + numberToRemove);
-                    phoneNumbers.remove(i);
-                }
-            }
-        } else System.out.println("The phone number to remove, " + numberToRemove + " from the directory does not exist");
+        if(indexToRemove != -1) {
+            phoneNumbers.remove(indexToRemove);
+            System.out.println("Deleting phone number: " + phoneNumber);
+        } else {
+            System.out.println("The phone number to remove, " + phoneNumber + " from the directory does not exist");
+        }
     }
 
 
