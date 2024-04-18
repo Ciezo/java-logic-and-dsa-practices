@@ -81,6 +81,7 @@ public class ArrayLists {
      * Checks if a phone number exists in the list
      * @param phoneNumber
      * @return true if a phone number is found, otherwise false
+     * @deprecated Since this is the same with isDuplicate(int phoneNumber)
      */
     private static boolean isPhoneNumberExist(int phoneNumber) {
         boolean flag = false;
