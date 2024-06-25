@@ -6,6 +6,12 @@
  * XOR (Exclusive OR), also known as bitwise operatior, is a logical operation where
  * if the given input in bits are the same therefore, the output is false (0). Otherwise, it's true (1). 
  * </p>
+ * 
+ * 
+ * References:
+ * 
+ * https://www.loginradius.com/blog/engineering/how-does-bitwise-xor-work/
+ * https://stackoverflow.com/questions/14526584/what-does-the-xor-operator-do 
  */
 
 

@@ -9,6 +9,12 @@
  * "racecar" is read the same as "racecar" in backwards
  * "radar" is read the same as "radar" in backwards
  * </p>
+ * 
+ * 
+ * References:
+ * https://www.programiz.com/java-programming/examples/palindrome-number 
+ * https://www.javatpoint.com/how-to-reverse-a-number-in-java 
+ * https://www.geeksforgeeks.org/character-array-in-java/ 
  */
 package main.java.logic;
 
@@ -67,7 +73,7 @@ public class CheckPalindrome {
         int reverseNum = 0;
         int remainder = 0; 
 
-        while (num != 0) {
+        while (num != 0) {              // Reference: https://www.javatpoint.com/how-to-reverse-a-number-in-java 
             remainder = num % 10;
             reverseNum = reverseNum * 10 + remainder;
             num = num / 10;
