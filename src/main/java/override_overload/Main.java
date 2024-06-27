@@ -25,6 +25,23 @@ public class Main {
         animal = new Dog();     // Dog class overrides
 
         animal.makeSound();     // Output now is "Dog barks! Arf! Arf!"
+
+
+        /** 
+         * Interfaces and overriding. 
+         * In this section, I also performed multi-level inheritance
+        */
+        ChildA childA = new ChildA();
+        childA.speak();             // Output is "ChildA"
+
+        childA = new ChildAa();     // Override with ChildAa class
+        childA.speak();             // Output here is "ChildAa" as implemented with the overridden method
+
+        ChildB childB = new ChildB();       
+        childB.speak();             // Output is "ChildB"
+
+        childB = new ChildBb();     // Override with ChildBb class
+        childB.speak();             // Output is "ChildBb"
     
     }
 }
