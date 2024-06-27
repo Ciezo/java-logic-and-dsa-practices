@@ -185,7 +185,10 @@ public class StackUsingArrayOrLinkedLists {
 
 
     private static int getMinimum(int[] stack) {
+        /* We start with a value from the array and set it as start point */
         int data = stack[0];        // use an initial value for comparison
+        // Initializing with stack[0] allows us to handle arrays with both positive and negative values. 
+        // If we set data to 0 directly, it might not be a valid minimum value if all elements in the array are positive.
 
         // First, scan the stack to see if there are any elements from 0 to n
         // which are of lowest against each other
