@@ -13,6 +13,9 @@
  * define a char[] array to initialize vowels. A for loop is used 
  * to traverse the String input to compare against the set of vowels.
  * </p>
+ * 
+ * Reference:
+ * https://stackoverflow.com/questions/506105/how-can-i-check-if-a-single-character-appears-in-a-string
  */
 package simple_exercises;
 
@@ -21,21 +24,29 @@ public class CheckStringForVowels {
 
     public static boolean checkStringVowels(String word) {
         
-        char[] vowels = {'a', 'e', 'i', 'o', 'u'};
+        // Define a string for vowels 
+        String vowels = "aeiou";
+        // Lowercase each character for consistent comparison
+        word = word.toLowerCase();
+         
         for (int i = 0; i < word.length(); i++) {
-            char ch = word.charAt(i);
-            if (ch == vowels[i]) {
+            char ch = word.charAt(i);                   // Get each individual character from the word
+            if (vowels.indexOf(ch) != -1) {             // Check if the char occurs inside the vowels String
                 return true;
-            }    
+            }
         }
-        
+
         return false;
     }
 
     public static void main(String[] args) {
-        String word = "cry";
-        boolean result = checkStringVowels(word);
-        System.out.println("Result: " + result);
+        String[] words = {"cry", "apple", "banana", "growth", "land", "mine", "cyst", "center", "middle", "myth", "hyssop"};
+        
+        for(String word : words) {
+            boolean result = checkStringVowels(word);
+            System.out.println("Result: " + result);
+        }
+
     }
 
 }
