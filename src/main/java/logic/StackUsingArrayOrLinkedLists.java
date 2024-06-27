@@ -51,7 +51,9 @@
  *              - Inserting an element to the stack
  * 
  */
-package main.java.logic; 
+package main.java.logic;
+
+import java.util.Arrays;
 
 /**
  * Question 4:
@@ -172,7 +174,7 @@ public class StackUsingArrayOrLinkedLists {
             System.out.println("Stack is empty. Cannot remove elements!");
             return 0;
         } else {
-            // Retrieve the top element before removing it
+            // Retrieve the last inserted element before removing it
             data = stack[length - 1];
             // Set the top element to 0 (or any other sentinel value if needed)
             stack[length - 1] = 0;
@@ -183,12 +185,13 @@ public class StackUsingArrayOrLinkedLists {
 
 
     private static int getMinimum(int[] stack) {
-        int data = 0; 
+        int data = stack[0];        // use an initial value for comparison
+
         // First, scan the stack to see if there are any elements from 0 to n
         // which are of lowest against each other
         /* A nested for loop is needed for this */
         for(int i = 0; i < stack.length; i++) {
-            for(int j = 0; j < i; j++) {
+            for(int j = i + 1; j < stack.length-1; j++) {
                 /**
                  * Now, it is necessary to begin comparing 
                  * each elem such that,
@@ -197,18 +200,12 @@ public class StackUsingArrayOrLinkedLists {
                  * through this we can begin comparing all 
                  * respective elements
                  */
-                if (stack[i] < stack[j]) {
-                    System.out.println("Comparing i to j ");
-                    System.out.println(stack[i] + " vs " + stack[j]);
-                    data = stack[i];
-                } else if (stack[j] < stack[i]) {
-                    System.out.println("Comparing j to i");
-                    System.out.println(stack[j] + " vs " + stack[i]);
+                if (stack[j] < data) {
                     data = stack[j];
                 }
             }
         }
-        
+
         return data; 
     }
 
