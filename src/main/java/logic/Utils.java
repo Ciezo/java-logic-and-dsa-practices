@@ -1,6 +1,20 @@
 package main.java.logic;
 
 public class Utils {
+
+    /**
+     * Checks if an integer array is empty 
+     * @param array an array of integer type
+     * @return true if the array has elements, otherwise false
+     */
+    public static boolean checkArray(int[] array) {
+        int length = array.length;
+        if (length < 1) 
+            return false;
+        
+        return true;
+    }
+
     /**
      * This is used in BinarySearchAlgorithmForSortedArray.java
      * It works!
