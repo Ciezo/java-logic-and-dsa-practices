@@ -1,3 +1,12 @@
+/**
+ * @author Cloyd Van Secuya 
+ * 
+ * <p>
+ * Read and stream contents from the input.txt file using `FileInputStream`
+ * to prepare in Serializing the entries based on the file contents 
+ * </p>
+ * 
+ */
 package concepts.serialization_deserialization;
 
 import java.util.ArrayList;
@@ -5,31 +14,27 @@ import java.io.FileInputStream;
 
 public class FileInStream {
     
-    private ArrayList<String> entries = new ArrayList<>();
-
     public void readFileStream() {
-        String fileNameExt = "input.txt";
+        String fileName = "input.txt";
+
+        // Store each line from the input.txt here
+        ArrayList<String> entries = new ArrayList<>();
 
         try {
-            FileInputStream fileInputStream = new FileInputStream(fileNameExt);
-            while(fileInputStream.read() != 1) {
-                fileInputStream.read();
-                int entry = fileInputStream.read();
-                System.out.println(entry);
+            FileInputStream fis = new FileInputStream(fileName); 
+            while(fis.read() != -1) {
+                System.out.println("Read...");
             }
-
-            fileInputStream.close();
+            // Prompt
+            System.out.println("Reached the end of the file: ");
+            fis.close();
 
         } catch (Exception e) {
+            System.out.println("Something went wrong in reading the file input!");
             e.printStackTrace();
         }
         
     }
 
-    public static void main(String[] args) {
-        FileInStream fis = new FileInStream();
-        fis.readFileStream();
-    }
-
-
+    
 }
