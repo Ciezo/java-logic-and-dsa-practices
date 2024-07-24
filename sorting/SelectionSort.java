@@ -6,7 +6,9 @@ public class SelectionSort {
      * Sort the elements of the array using Selection Sort.
      * Selects the lowest value in the array, and moves it in front of the array. 
      * @param arr 
-     * @return
+     * @return sorted array
+     * 
+     * @reference: https://www.geeksforgeeks.org/selection-sort-algorithm-2/
      */
     private static int[] selectionSort(int[] arr) {
         int n = arr.length;
@@ -50,7 +52,7 @@ public class SelectionSort {
     public static void main(String[] args) {
         Arrays arr = new Arrays(8);
         
-        int[] unsortedArr = arr.populateArray();
+        int[] unsortedArr = arr.populateIntegerArray();
         int[] sortedArr = selectionSort(unsortedArr);
         display(sortedArr);
         

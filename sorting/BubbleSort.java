@@ -112,7 +112,7 @@ public class BubbleSort {
         // Create a random filled array 
         Arrays array = new Arrays(6);
         // Assign random array with pseudorandom elements
-        int[] unsortedArr = array.populateArray();
+        int[] unsortedArr = array.populateIntegerArray();
         
         Thread t1 = new Thread(new Runnable() {
            @Override

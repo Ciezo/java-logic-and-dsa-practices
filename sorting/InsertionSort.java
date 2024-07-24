@@ -5,6 +5,10 @@ public class InsertionSort {
      * Arrange the elements of the array from least to greatest using insertion sort
      * @param arr of type int
      * @return sorted array
+     * 
+     * @reference: https://www.geeksforgeeks.org/insertion-sort-algorithm/
+     *             https://www.programiz.com/dsa/insertion-sort     
+     *             https://www.javatpoint.com/insertion-sort-in-java
      */
     private static int[] insertionSort(int[] arr) {
         int n = arr.length;
@@ -49,7 +53,7 @@ public class InsertionSort {
     public static void main(String[] args) {
         Arrays arr = new Arrays(3);
         
-        int[] unsortedArr = arr.populateArray();
+        int[] unsortedArr = arr.populateIntegerArray();
         int[] sortedArr = insertionSort(unsortedArr);
         display(sortedArr);
         
