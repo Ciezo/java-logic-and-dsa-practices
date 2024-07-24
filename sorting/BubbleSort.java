@@ -14,7 +14,7 @@ public class BubbleSort {
      * 
      * @reference: https://www.geeksforgeeks.org/bubble-sort-algorithm/
      */
-    private static int[] bubbleSort(int[] arr) {
+    private static synchronized int[] bubbleSort(int[] arr) {
         int n = arr.length;
         int temp = 0;
         boolean swapped;
@@ -52,7 +52,7 @@ public class BubbleSort {
      * @param arr of type int 
      * @return sorted array
      */
-    private static int[] bubbleSort2(int[] arr) {
+    private static synchronized int[] bubbleSort2(int[] arr) {
         int n = arr.length;
         int temp = 0; 
 
@@ -78,7 +78,7 @@ public class BubbleSort {
      * @param arr of type int 
      * @return sorted array
      */
-    public static int[] bubbleSort3(int[] arr) {
+    public static synchronized int[] bubbleSort3(int[] arr) {
         int n = arr.length;
         int temp = 0; 
 
