@@ -160,11 +160,16 @@ public class Quicksort {
         Arrays arr = new Arrays(5);
 
         int[] unsortedArr = arr.populateIntegerArray();
+        System.out.print("Unsorted: ");
+        display(unsortedArr);
+
         int n = unsortedArr.length;
         quickSort(unsortedArr, 0, n-1);
+        
         // Assign the overwritten unsortedArr[] to new variable
         int[] sortedArr = unsortedArr;
 
+        System.out.print("Sorted: ");
         display(sortedArr);
     }
 }

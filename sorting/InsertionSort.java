@@ -54,7 +54,11 @@ public class InsertionSort {
         Arrays arr = new Arrays(3);
         
         int[] unsortedArr = arr.populateIntegerArray();
+        System.out.print("Unsorted: ");
+        display(unsortedArr);
+
         int[] sortedArr = insertionSort(unsortedArr);
+        System.out.print("Sorted: ");
         display(sortedArr);
         
     }

@@ -53,7 +53,11 @@ public class SelectionSort {
         Arrays arr = new Arrays(8);
         
         int[] unsortedArr = arr.populateIntegerArray();
+        System.out.print("Unsorted: ");
+        display(unsortedArr);
+
         int[] sortedArr = selectionSort(unsortedArr);
+        System.out.print("Sorted: ");
         display(sortedArr);
         
     }
