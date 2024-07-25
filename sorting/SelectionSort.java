@@ -17,7 +17,7 @@ public class SelectionSort {
         /** Iterate through each element */
         for (int i = 0; i < (n-1); i++) {
             /** Finding the minimum value by i+1 */
-            for (int j = i+1; j < (n-1); j++) {
+            for (int j = i+1; j < n; j++) {
                 int min = i;
                 if (arr[j] < arr[min]) {        // Compare each element such that, arr[i+1] < arr[i]
                     // Assign the index of the minimum value 
