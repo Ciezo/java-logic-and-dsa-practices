@@ -237,5 +237,31 @@ public class Utils {
                 System.out.println(elem);
             }
         }
+
+        /**
+         * Traverse an array by step
+         * @param array the integer array to be traversed either forward (starting from the head) 
+         *              or backwards (starting from the tail)
+         * @param step true for forwards; false fro backwards
+         * @return
+         */
+        public static int[] traverseArrayByStep(int[] array, boolean step) {
+            int[] arrayTraversed = new int[array.length];
+            int size = array.length;
+            // Forward  
+            if (step == true) {
+                for (int i = 0; i < size; i++) {
+                    arrayTraversed[i] = array[i];
+                }
+            } 
+            // Backward
+            else {
+                for (int i = size; i > size-1; i--) {
+                    arrayTraversed[i] = array[i];
+                }
+            }
+
+            return arrayTraversed;
+        }
     }
 }
