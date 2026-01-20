@@ -71,10 +71,10 @@ public class LuhnAlgorithm {
             int tempSize = temp.length();
             elements = convertToArray(temp, tempSize);
 
-            // Begin traversing starting from the tail
-            for (int i = elements.length-1; i >= 0; i--) {
+            // Begin traversing starting from the tail with 2 steps
+            int size = elements.length;
+            for (int i = (size - 1); i >= 0; i -= 2) {
                 int productRes = elements[i] * 2;
-                /** @TODO: Find a way to "hop" between the elements stopping at index 0 */
             }
 
         } else {
@@ -87,6 +87,6 @@ public class LuhnAlgorithm {
     public static void main(String[] args) {
         long input = 79927398713L;   // valid input according to Luhn's Algorithm
         boolean result = doLuhnAlgorithm(input);
-        System.out.println("Is the input valid according to Luhn's Algorithm? " + result);
+        // System.out.println("Is the input valid according to Luhn's Algorithm? " + result);
     }
 }
