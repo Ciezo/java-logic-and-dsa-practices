@@ -73,9 +73,22 @@ public class LuhnAlgorithm {
 
             // Begin traversing starting from the tail with 2 steps
             int size = elements.length;
-            for (int i = (size - 1); i >= 0; i -= 2) {
-                int productRes = elements[i] * 2;
+            for (int i = (size - 2); i >= 0; i -= 2) {
+                int productDoubleNumber = elements[i] * 2;      // doubling operation here 
+                if (productDoubleNumber > 9) {      // If greater than 9 then, subtract by 9 (by adding the two operands together)
+                    productDoubleNumber -= 9;
+                } 
+                // Substitute for all lay elements ;
+                elements[i] = productDoubleNumber; 
             }
+
+            // Check if multiple by 10 
+            int sum = 0; 
+            for (int elem : elements) {
+                sum += elem;
+            }
+
+            if (sum % 10 == 0) isValid = true;
 
         } else {
             System.out.println("Input is a negative number. Invalid operation!");
@@ -87,6 +100,6 @@ public class LuhnAlgorithm {
     public static void main(String[] args) {
         long input = 79927398713L;   // valid input according to Luhn's Algorithm
         boolean result = doLuhnAlgorithm(input);
-        // System.out.println("Is the input valid according to Luhn's Algorithm? " + result);
+        System.out.println("Is the input valid according to Luhn's Algorithm? " + result);
     }
 }
