@@ -31,8 +31,15 @@ import java.util.Random;
 
 public class Lists {
     
-    static List<Integer> intLs1D = new ArrayList<>();        // 1-D 
-    static List<List<Integer>> intLs2D = new ArrayList<>();  // 2-D 
+    static List<Integer> oneDim = new ArrayList<>();        // 1-D 
+
+    /**
+     * This is a "List of list", 2D list where each row is another List.
+     * https://www.geeksforgeeks.org/java/how-to-iterate-over-a-2d-list-or-list-of-lists-in-java/ 
+     */
+    static List<List<Integer>> twoDim = new ArrayList<List<Integer>>();
+    
+    static Random r = new Random();
     
     /**
      * Populate the List<Integer> with random integer numbers depending on the size
@@ -42,7 +49,6 @@ public class Lists {
      */
     public static List<Integer> populate(int size, int range) {
         List<Integer> temp = new ArrayList<>();
-        Random r = new Random();
         r.nextInt(range);
 
         for (int i = 0; i < size; i++) {
@@ -53,12 +59,48 @@ public class Lists {
         return temp;
     }
 
-    public static void main(String[] args) {
-        intLs1D = populate(10, 100);        
-        Collections.sort(intLs1D);
+    /**
+     * Populate a 2-D array (matrix) with random integer values depending on the specified table size.
+     * @param rowSize the number of rows from index 0...n as a plot of X-axis
+     * @param colSize the number of cols from index 0...n as a plot of Y-axis
+     * @param range the scale of the number element to be used as part of the matrix
+     * @return populated matrix List<List<Integer>> with full integers inside
+     */
+    public static List<List<Integer>> populateMatrix(int rowSize, int colSize, int range) {
+        List<List<Integer>> graph = new ArrayList<List<Integer>>();
 
-        for (int e : intLs1D) {
+        for(int i = 0; i < rowSize; i++) {
+            /** To fill in a matrix of a "List-of-List", we need to create a row List */
+            List<Integer> row = new ArrayList<>();      // row (or the first List)
+            /** Next, we loop through the row filling in each index then move downward to the next col */
+            for (int j = 0; j < colSize; j++) {
+                int elem = Integer.valueOf(r.nextInt(range));
+                // Here, fill in the row 
+                row.add(j, elem);
+            }
+            // Once, the row is filled. Add it to the matrix (graph)
+            graph.add(row);
+        }
+
+        return graph;
+
+    }
+
+    public static void main(String[] args) {
+        oneDim = populate(10, 100);        
+        Collections.sort(oneDim);
+
+        twoDim = populateMatrix(2, 10, 10);
+
+        for (int e : oneDim) {
             System.out.println(e);
+        }
+
+        for (List<Integer> row : twoDim) {
+            for (int element : row) {
+                System.out.print(element + " ");
+            }
+            System.out.println();
         }
     }
 }
