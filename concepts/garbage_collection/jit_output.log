@@ -1,0 +1,1186 @@
+     29    6       3       java.lang.StringLatin1::hashCode (42 bytes)
+     30    8       3       java.util.ImmutableCollections$SetN::probe (56 bytes)
+     31    5       3       java.lang.String::hashCode (60 bytes)
+     31   10       3       java.lang.StringLatin1::equals (36 bytes)
+     32    4       3       java.lang.Object::<init> (1 bytes)
+     32    7       3       java.lang.Math::floorMod (20 bytes)
+     32    3       3       java.lang.String::isLatin1 (19 bytes)
+     33   12       3       java.util.Objects::requireNonNull (14 bytes)
+     33    9       3       java.lang.String::equals (56 bytes)
+     33   14       3       java.lang.String::coder (15 bytes)
+     34   11       3       java.util.Set::of (4 bytes)
+     34   13       1       java.lang.module.ModuleDescriptor::name (5 bytes)
+     34   17       3       java.util.ImmutableCollections$SetN$SetNIterator::hasNext (13 bytes)
+     34    1       3       java.lang.String::charAt (25 bytes)
+     35   15       4       java.lang.Object::<init> (1 bytes)
+     35   23       3       java.util.ImmutableCollections$MapN::probe (60 bytes)
+     35   24       3       java.util.ImmutableCollections$SetN$SetNIterator::next (90 bytes)
+     35    4       3       java.lang.Object::<init> (1 bytes)   made not entrant
+     35   25     n 0       jdk.internal.misc.Unsafe::compareAndSetLong (native)   
+     36   16       1       java.lang.module.ModuleReference::descriptor (5 bytes)
+     36   29     n 0       jdk.internal.misc.Unsafe::getReferenceVolatile (native)   
+     36   26   !   3       java.util.concurrent.ConcurrentHashMap::putVal (432 bytes)
+     37   27       3       java.util.concurrent.ConcurrentHashMap::tabAt (22 bytes)
+     37   28       3       jdk.internal.misc.Unsafe::getReferenceAcquire (7 bytes)
+     37   30       3       java.util.concurrent.ConcurrentHashMap::spread (10 bytes)
+     37   31       3       java.util.concurrent.ConcurrentHashMap$Node::<init> (20 bytes)
+     37   32       3       java.util.concurrent.ConcurrentHashMap::addCount (280 bytes)
+     38   37       3       java.util.HashMap::putVal (300 bytes)
+     39   35       3       java.util.HashMap::hash (20 bytes)
+     39   38       3       java.util.HashMap::newNode (13 bytes)
+     39   39       3       java.util.HashMap$Node::<init> (26 bytes)
+     39   40       3       java.util.HashMap::afterNodeInsertion (1 bytes)
+     39   41       3       java.util.HashMap::put (13 bytes)
+     40   18       1       java.util.KeyValueHolder::getKey (5 bytes)
+     40    2       3       java.lang.StringLatin1::charAt (15 bytes)
+     40   19       1       java.util.KeyValueHolder::getValue (5 bytes)
+     40   20       3       java.util.ImmutableCollections$AbstractImmutableSet::<init> (5 bytes)
+     40   22       3       java.util.Objects::equals (23 bytes)
+     40   46       3       java.lang.String::length (11 bytes)
+     40   21       3       java.util.AbstractCollection::<init> (5 bytes)
+     40   34       1       java.lang.module.ResolvedModule::reference (5 bytes)
+     40   36       1       java.lang.module.ModuleDescriptor$Exports::source (5 bytes)
+     41   42       1       java.lang.module.ModuleDescriptor::isAutomatic (5 bytes)
+     41   45       1       java.util.ImmutableCollections$Set12::isEmpty (2 bytes)
+     41   43       1       java.lang.module.ResolvedModule::configuration (5 bytes)
+     41   33       3       java.util.concurrent.ConcurrentHashMap::putIfAbsent (8 bytes)
+     41   44       1       java.lang.module.ModuleDescriptor$Exports::targets (5 bytes)
+     41   47     n 0       jdk.internal.misc.Unsafe::compareAndSetReference (native)   
+     41   48     n 0       java.lang.System::arraycopy (native)   (static)
+[B@372f7a8d
+[B@2f92e0f4
+[B@28a418fc
+[B@5305068a
+[B@1f32e575
+[B@279f2327
+[B@2ff4acd0
+     43   49       1       java.util.concurrent.locks.AbstractOwnableSynchronizer::setExclusiveOwnerThread (6 bytes)
+     43 [B@54bedef2
+  50       3       java.lang.AbstractStringBuilder::isLatin1 (19 bytes)
+[B@5caf905d
+     43   51       3       java.lang.Math::min (11 bytes)
+[B@27716f4
+[B@8efb846
+[B@2a84aee7
+     44   52       1       java.util.concurrent.locks.AbstractOwnableSynchronizer::getExclusiveOwnerThread (5 bytes)
+     44   53       1       java.util.concurrent.locks.AbstractQueuedSynchronizer::getState (5 bytes)
+[B@a09ee92
+     44   54       1       java.util.concurrent.locks.AbstractQueuedSynchronizer::setState (6 bytes)
+[B@30f39991
+[B@452b3a41
+[B@4a574795
+     45 [B@f6f4d33
+  55       3       java.lang.AbstractStringBuilder::ensureCapacityInternal (39 bytes)
+[B@23fc625e
+[B@3f99bd52
+[B@4f023edb
+[B@3a71f4dd
+     46   56       3       java.lang.String::getBytes (44 bytes)
+[B@7adf9f5f
+[B@85ede7b
+     47   57     n 0       jdk.internal.misc.Unsafe::compareAndSetInt (native)   
+[B@5674cd4d
+[B@63961c42
+     47   58       3       java.util.concurrent.locks.ReentrantLock::lock (8 bytes)
+[B@65b54208
+     47   59       3       java.util.concurrent.locks.ReentrantLock$Sync::lock (13 bytes)
+[B@1be6f5c3
+     47   60       3       jdk.internal.misc.InternalLock::lock (8 bytes)
+[B@6b884d57
+     48   61 [B@38af3868
+      3       java.lang.StringBuilder::append (8 bytes)
+     48   63       3       java.util.concurrent.locks.AbstractQueuedSynchronizer::signalNext (34 bytes)[B@77459877
+
+[B@5b2133b1
+     48   62       3       java.lang.AbstractStringBuilder::append (45 bytes)
+[B@72ea2f77
+     49   64       1       java.nio.Buffer::position (5 bytes)
+[B@33c7353a
+[B@681a9515
+[B@3af49f1c
+[B@19469ea2
+[B@13221655
+[B@2f2c9b19
+     50   65       3 [B@31befd9f
+      java.util.concurrent.locks.ReentrantLock$NonfairSync::initialTryLock (58 bytes)
+[B@1c20c684
+     50   66       3       java.util.concurrent.locks.AbstractQueuedSynchronizer::compareAndSetState (13 bytes)
+     50   67       3       java.util.concurrent.locks.AbstractQueuedSynchronizer::release (19 bytes)
+[B@1fb3ebeb
+[B@548c4f57
+     51   68       3       java.util.concurrent.locks.ReentrantLock$Sync::tryRelease (51 bytes)
+[B@1218025c
+     51   69       3       jdk.internal.misc.InternalLock::unlock (8 bytes)
+     51   70       3       java.util.concurrent.locks.ReentrantLock::unlock (10 bytes)
+[B@816f27d
+     51   72       1       java.nio.Buffer::limit (5 bytes)
+     51   73       1       java.lang.AbstractStringBuilder::getValue (5 bytes)
+[B@87aac27
+     51   71       1       java.lang.AbstractStringBuilder::length (5 bytes)
+[B@3e3abc88
+[B@6ce253f1
+[B@53d8d10a
+[B@e9e54c2
+[B@65ab7765
+[B@1b28cdfa
+[B@eed1f14
+[B@7229724f
+[B@4c873330
+[B@119d7047
+[B@776ec8df
+[B@4eec7777
+[B@3b07d329
+[B@41629346
+[B@404b9385
+[B@6d311334
+[B@682a0b20
+[B@3d075dc0
+[B@214c265e
+     56   74       3       java.nio.ByteBuffer::arrayOffset (35 bytes)
+[B@448139f0
+[B@7cca494b
+[B@7ba4f24f
+[B@3b9a45b3
+[B@7699a589
+[B@58372a00
+[B@4dd8dc3
+[B@6d03e736
+[B@568db2f2
+[B@378bf509
+[B@5fd0d5ae
+[B@2d98a335
+[B@16b98e56
+[B@7ef20235
+[B@27d6c5e0
+[B@4f3f5b24
+[B@15aeb7ab
+[B@7b23ec81
+     58   75     n 0       java.lang.Object::hashCode (native)   
+[B@6acbcfc0
+[B@5f184fc6
+[B@3feba861
+     58   76       3       java.nio.Buffer::position (52 bytes)
+[B@5b480cf9
+[B@6f496d9f
+[B@723279cf
+[B@10f87f48
+     58   77       3       java.io.BufferedWriter::ensureOpen (18 bytes)
+[B@b4c966a
+     58 [B@2f4d3709
+  78       3       java.nio.CharBuffer::arrayOffset (35 bytes)
+[B@4e50df2e
+[B@1d81eb93
+[B@7291c18f
+[B@34a245ab
+[B@7cc355be
+[B@6e8cf4c6
+[B@12edcd21
+[B@34c45dca
+[B@52cc8049
+[B@5b6f7412
+[B@27973e9b
+[B@312b1dae
+[B@7530d0a
+[B@27bc2616
+[B@3941a79c
+[B@506e1b77
+     59 [B@4fca772d
+  79       3       java.lang.String::toString (2 bytes)
+[B@9807454
+     59   80     n 0       java.lang.Object::getClass (native)   
+[B@3d494fbf
+[B@1ddc4ec2
+[B@133314b
+[B@b1bc7ed
+[B@7cd84586
+[B@30dae81
+[B@1b2c6ec2
+[B@4edde6e5
+[B@70177ecd
+[B@1e80bfe8
+     62   81       3       java.lang.String::checkBoundsBeginEnd (11 bytes)
+[B@66a29884
+[B@4769b07b
+     62   82 [B@cc34f4d
+      3       jdk.internal.util.Preconditions::checkFromToIndex (24 bytes)
+[B@17a7cec2
+[B@65b3120a
+[B@6f539caf
+     62   83 [B@79fc0f2f
+      3       java.lang.String::checkBoundsOffCount (10 bytes)
+[B@50040f0c
+[B@2dda6444
+     63   85       3      [B@5e9f23b4
+ java.lang.StringLatin1::inflate (34 bytes)
+[B@4783da3f
+[B@378fd1ac
+     63   84       3      [B@49097b5d
+ jdk.internal.util.Preconditions::checkFromIndexSize (25 bytes)
+[B@6e2c634b
+[B@37a71e93
+     63   86       1       java.nio.Buffer::capacity (5 bytes)
+[B@7e6cbb7a
+     63   87       1      [B@7c3df479
+ java.nio.charset.CharsetEncoder::maxBytesPerChar (5 bytes)
+[B@7106e68e
+[B@7eda2dbb
+[B@6576fe71
+[B@76fb509a
+[B@300ffa5d
+[B@1f17ae12
+     64   88 [B@4d405ef7
+      4       java.util.concurrent.locks.AbstractQueuedSynchronizer::compareAndSetState (13 bytes)
+[B@6193b845
+[B@2e817b38
+[B@c4437c4
+[B@433c675d
+[B@3f91beef
+[B@1a6c5a9e
+[B@37bba400
+     64   66       3       java.util.concurrent.locks.AbstractQueuedSynchronizer::compareAndSetState (13 bytes)   made not entrant
+[B@179d3b25
+[B@254989ff
+[B@5d099f62
+[B@37f8bb67
+[B@49c2faae
+[B@20ad9418
+[B@31cefde0
+[B@439f5b3d
+[B@1d56ce6a
+     65   89       3       java.lang.StringCoding::[B@5197848c
+implEncodeAsciiArray (47 bytes)[B@17f052a3
+
+[B@2e0fa5d3
+[B@5010be6
+[B@685f4c2e
+     65   90       3 [B@7daf6ecc
+      java.util.Arrays::copyOfRange (64 bytes)
+[B@2e5d6d97
+[B@238e0d81
+[B@31221be2
+[B@377dca04
+[B@728938a9
+[B@21b8d17c
+     66   91       3       java.lang.String::<init> (15 bytes)
+[B@6433a2
+     67 [B@5910e440
+  92       3       java.lang.StringBuilder::length (5 bytes)
+[B@6267c3bb
+[B@533ddba
+[B@246b179d
+[B@7a07c5b4
+[B@26a1ab54
+[B@3d646c37
+[B@41cf53f9
+[B@5a10411
+[B@2ef1e4fa
+[B@306a30c7
+[B@b81eda8
+[B@68de145
+[B@27fa135a
+[B@46f7f36a
+[B@421faab1
+[B@2b71fc7e
+[B@5ce65a89
+[B@25f38edc
+     69 [B@1a86f2f1
+  94       3       java.lang.String::getChars (55 bytes)
+[B@3eb07fd3
+[B@506c589e
+[B@69d0a921
+[B@446cdf90
+[B@799f7e29
+[B@4b85612c
+[B@277050dc
+[B@5c29bfd
+[B@7aec35a
+     69   95       3       java.lang.StringLatin1::getChars (12 bytes)
+[B@67424e82
+     69   96       3       java.lang.String::valueOf (15 bytes)
+[B@42110406
+[B@531d72ca
+     69   97       3       java.io.Writer::write (11 bytes)
+[B@22d8cfe0
+[B@579bb367
+     70   98   !   3       java.io.BufferedWriter::write (82 bytes)
+[B@1de0aca6
+[B@255316f2
+[B@41906a77
+[B@4b9af9a9
+[B@5387f9e0
+[B@6e5e91e4
+[B@2cdf8d8a
+     70   93       3       java.lang.Math::max (11 bytes)[B@30946e09
+
+[B@5cb0d902
+[B@46fbb2c1
+[B@1698c449
+[B@5ef04b5
+[B@5f4da5c3
+[B@443b7951
+[B@14514713
+[B@69663380
+[B@5b37e0d2
+[B@4459eb14
+[B@5a2e4553
+[B@28c97a5
+[B@6659c656
+[B@6d5380c2
+[B@45ff54e6
+     73   99       3       jdk.internal.misc.VM::isBooted (13 bytes)
+[B@2328c243
+[B@bebdb06
+[B@7a4f0f29
+[B@45283ce2
+[B@2077d4de
+[B@7591083d
+[B@77a567e1
+[B@736e9adb
+[B@6d21714c
+[B@108c4c35
+[B@4ccabbaa
+[B@4bf558aa
+[B@2d38eb89
+[B@5fa7e7ff
+[B@4629104a
+[B@27f8302d
+     74  100       3       java.lang.Class::getName (18 bytes)
+[B@4d76f3f8
+[B@2d8e6db6
+     74  102       3       jdk.internal.misc.Blocker::end (71 bytes)
+[B@23ab930d
+     74  103     n 0       java.lang.Thread::currentCarrierThread (native)   (static)
+[B@4534b60d
+     74  101   !   3       jdk.internal.misc.Blocker::begin (97 bytes)
+[B@3fa77460
+[B@619a5dff
+[B@1ed6993a
+[B@7e32c033
+     75  104       [B@7ab2bfe1
+3       java.lang.Integer::numberOfLeadingZeros (79 bytes)
+[B@497470ed
+[B@63c12fb0
+     75  107       3       java.io.BufferedWriter::growIfNeeded (63 bytes)
+[B@b1a58a3
+[B@6438a396
+[B@e2144e4
+[B@6477463f
+     75  108       3       java.io.BufferedWriter::min (9 bytes)
+[B@3d71d552
+[B@1cf4f579
+     75  109       3       java.nio.CharBuffer::position (6 bytes)
+[B@18769467
+[B@46ee7fe8
+     75  110       3       java.nio.CharBuffer::position[B@7506e922
+ (8 bytes)
+[B@4ee285c6
+[B@621be5d1
+     76  111       3       java.nio.charset.CoderResult::isUnderflow (13 bytes)
+[B@573fd745
+     76  112       3       java.nio.Buffer::remaining (20 bytes)
+[B@15327b79
+     76  105       3       java.nio.Buffer::<init> (105 bytes)
+[B@4f2410ac
+[B@722c41f4
+[B@5b80350b
+[B@5d6f64b1
+[B@32a1bec0
+[B@22927a81
+[B@78e03bb5
+     76  113       3       java.io.BufferedWriter::implWrite (100 bytes)
+[B@5e8c92f4
+[B@61e4705b
+[B@50134894
+[B@2957fcb0
+[B@1376c05c
+[B@51521cc1
+     77  106       3       java.nio.Buffer::limit (65 bytes)
+[B@1b4fb997
+[B@deb6432
+[B@28ba21f3
+[B@694f9431
+[B@f2a0b8e
+[B@593634ad
+[B@20fa23c1
+[B@3581c5f3
+[B@6aa8ceb6
+[B@2530c12
+[B@73c6c3b2
+[B@48533e64
+     80  115       3       java.lang.AbstractStringBuilder::<init> (39 bytes)
+[B@64a294a6
+[B@7e0b37bc
+[B@3b95a09c
+     80  116       [B@6ae40994
+3       java.lang.StringBuilder::toString (9 bytes)
+[B@1a93a7ca
+[B@3d82c5f3
+[B@2b05039f
+     81  117       3       java.lang.String::<init> (7 bytes)
+[B@61e717c2
+[B@66cd51c3
+     81  118       3       java.lang.String::<init> (99 bytes)
+[B@4dcbadb4
+[B@4e515669
+[B@17d10166
+[B@1b9e1916
+[B@ba8a1dc
+[B@4f8e5cde
+     81  114       3       java.lang.StringBuilder::<init> (7 bytes)
+[B@504bae78
+[B@3b764bce
+[B@759ebb3d
+[B@484b61fc
+[B@45fe3ee3
+[B@4cdf35a9
+[B@4c98385c
+[B@5fcfe4b2
+[B@6bf2d08e
+[B@5eb5c224
+[B@53e25b76
+     82 [B@73a8dfcc
+ 119       3       java.nio.ByteBuffer::array (35 bytes)
+[B@ea30797
+[B@7e774085
+[B@3f8f9dd6
+[B@aec6354
+     82  120       3       java.io.PrintStream::ensureOpen (18 bytes)
+[B@1c655221
+[B@58d25a40
+     82  121   !   3       java.io.BufferedOutputStream::[B@1b701da1
+flush (60 bytes)
+[B@726f3b58
+[B@442d9b6e
+[B@ee7d9f1
+[B@15615099
+[B@1edf1c96
+[B@368102c8
+[B@6996db8
+[B@1963006a
+[B@7fbe847c
+[B@41975e01
+[B@c2e1f26
+     83  122       3       java.io.BufferedOutputStream::implFlush (12 bytes)
+[B@dcf3e99
+[B@6d9c638
+     83  123       3       java.io.BufferedOutputStream::flushBuffer (29 bytes)
+[B@7dc5e7b4
+     83  124       3       java.io.OutputStream::flush (1 bytes)
+[B@1ee0005
+[B@75a1cd57
+[B@3d012ddd
+[B@6f2b958e
+[B@1eb44e46
+[B@6504e3b2
+[B@515f550a
+[B@626b2d4a
+[B@5e91993f
+[B@1c4af82c
+[B@379619aa
+[B@cac736f
+[B@5e265ba4
+[B@156643d4
+[B@123a439b
+[B@7de26db8
+[B@1175e2db
+[B@36aa7bc2
+[B@76ccd017
+[B@182decdb
+[B@26f0a63f
+[B@4361bd48
+[B@53bd815b
+[B@2401f4c3
+[B@7637f22
+[B@4926097b
+[B@762efe5d
+[B@5d22bbb7
+[B@41a4555e
+[B@3830f1c0
+[B@39ed3c8d
+[B@71dac704
+[B@123772c4
+[B@2d363fb3
+[B@7d6f77cc
+[B@5aaa6d82
+[B@73a28541
+[B@6f75e721
+[B@69222c14
+[B@606d8acf
+     90  125       3       java.nio.ByteBuffer::position (6 bytes)
+[B@782830e
+     91  126       3       java.nio.ByteBuffer::position (8 bytes)
+     91  131       3 [B@470e2030
+      java.lang.Integer::formatUnsignedInt (40 bytes)
+     91  127 [B@3fb4f649
+  !   3       java.io.PrintStream::println (51 bytes)
+[B@33833882
+[B@200a570f
+     91  128       3       java.lang.Object::toString (36 bytes)
+[B@16b3fc9e
+     92  129       3       java.lang.Integer::toHexString (6 bytes)
+[B@e2d56bf
+     92  130       3       java.lang.Integer::toUnsignedString0 (76 bytes)
+[B@244038d0
+     92  132   !   3       java.io.FileOutputStream::write (47 bytes)
+[B@5680a178
+[B@5fdef03a
+[B@3b22cdd0
+[B@1e81f4dc
+[B@4d591d15
+[B@65ae6ba4
+[B@48cf768c
+[B@59f95c5d
+[B@5ccd43c2
+[B@4aa8f0b4
+[B@7960847b
+[B@6a6824be
+[B@5c8da962
+[B@512ddf17
+[B@2c13da15
+[B@77556fd
+     95  133   !   3       java.io.BufferedWriter::flushBuffer (63 bytes)
+[B@368239c8
+[B@9e89d68
+[B@3b192d32
+[B@16f65612
+[B@311d617d
+[B@7c53a9eb
+[B@ed17bee
+[B@2a33fae0
+[B@707f7052
+[B@11028347
+[B@14899482
+[B@21588809
+[B@2aae9190
+[B@2f333739
+[B@77468bd9
+[B@12bb4df8
+[B@4cc77c2e
+[B@7a7b0070
+[B@39a054a5
+[B@71bc1ae4
+[B@6ed3ef1
+[B@2437c6dc
+[B@1f89ab83
+[B@e73f9ac
+[B@61064425
+[B@7b1d7fff
+[B@299a06ac
+[B@383534aa
+[B@6bc168e5
+[B@7b3300e5
+[B@2e5c649
+[B@136432db
+[B@7382f612
+[B@1055e4af
+[B@3caeaf62
+[B@e6ea0c6
+[B@6a38e57f
+[B@5577140b
+[B@1c6b6478
+[B@67f89fa3
+[B@4ac68d3e
+[B@277c0f21
+[B@6073f712
+[B@43556938
+[B@3d04a311
+[B@7a46a697
+[B@5f205aa
+[B@6d86b085
+[B@75828a0f
+[B@3abfe836
+[B@2ff5659e
+[B@77afea7d
+[B@161cd475
+[B@532760d8
+[B@57fa26b7
+[B@5f8ed237
+[B@2f410acf
+[B@47089e5f
+[B@4141d797
+[B@68f7aae2
+[B@4f47d241
+[B@4c3e4790
+[B@38cccef
+[B@5679c6c6
+[B@27ddd392
+[B@19e1023e
+[B@7cef4e59
+[B@64b8f8f4
+[B@2db0f6b2
+[B@3cd1f1c8
+[B@3a4afd8d
+[B@1996cd68
+[B@3339ad8e
+[B@555590
+[B@6d1e7682
+[B@424c0bc4
+[B@3c679bde
+[B@16b4a017
+[B@8807e25
+[B@2a3046da
+[B@2a098129
+[B@198e2867
+[B@12f40c25
+[B@3ada9e37
+[B@5cbc508c
+[B@3419866c
+[B@63e31ee
+[B@68fb2c38
+[B@567d299b
+[B@2eafffde
+[B@59690aa4
+[B@6842775d
+[B@574caa3f
+[B@64cee07
+[B@1761e840
+[B@6c629d6e
+[B@5ecddf8f
+[B@3f102e87
+[B@27abe2cd
+[B@5f5a92bb
+[B@6fdb1f78
+[B@51016012
+[B@29444d75
+[B@2280cdac
+[B@1517365b
+    105  134       3       java.io.PrintStream::implWriteln (48 bytes)
+[B@4fccd51b
+[B@44e81672
+[B@60215eee
+[B@4ca8195f
+[B@65e579dc
+[B@61baa894
+[B@b065c63
+[B@768debd
+[B@490d6c15
+[B@7d4793a8
+    106  135       3 [B@449b2d27
+      java.io.BufferedWriter::newLine (8 bytes)
+[B@5479e3f
+[B@27082746
+[B@66133adc
+[B@7bfcd12c
+    106  136       3       java.lang.System::lineSeparator (4 bytes)
+[B@42f30e0a
+    106  137       3       java.io.OutputStreamWriter::[B@24273305
+write (11 bytes)
+[B@5b1d2887
+[B@46f5f779
+    106  138   !   3       sun.nio.cs.StreamEncoder::write (82 bytes)
+[B@1c2c22f3
+[B@18e8568
+[B@33e5ccce
+[B@5a42bbf4
+[B@270421f5
+[B@52d455b8
+[B@4f4a7090
+[B@18ef96
+[B@6956de9
+[B@769c9116
+    107  139       3      [B@6aceb1a5
+ sun.nio.cs.StreamEncoder::[B@2d6d8735
+lockedWrite (53 bytes)
+[B@ba4d54
+[B@12bc6874
+[B@de0a01f
+[B@4c75cab9
+[B@1ef7fe8e
+    107  140       3       sun.nio.cs.StreamEncoder::ensureOpen (18 bytes)
+[B@6f79caec
+    108  141       3       sun.nio.cs.StreamEncoder::implWrite (15 bytes)
+[B@67117f44
+    108  142       3       java.nio.ByteBuffer::hasArray (20 bytes)
+[B@5d3411d
+[B@2471cca7
+[B@5fe5c6f
+    108  143       4       java.util.concurrent.locks.ReentrantLock$NonfairSync::initialTryLock (58 bytes)
+[B@6979e8cb
+[B@763d9750
+[B@5c0369c4
+[B@2be94b0f
+[B@d70c109
+[B@17ed40e0
+[B@50675690
+[B@31b7dea0
+[B@3ac42916
+[B@47d384ee
+[B@2d6a9952
+[B@22a71081
+    110   65       3       java.util.concurrent.locks.ReentrantLock$NonfairSync::initialTryLock (58 bytes)   made not entrant
+    110  144       4       java.util.concurrent.locks.ReentrantLock$Sync::tryRelease (51 bytes)
+[B@3930015a
+[B@629f0666
+[B@1bc6a36e
+[B@1ff8b8f
+[B@387c703b
+[B@224aed64
+[B@c39f790
+[B@71e7a66b
+[B@2ac1fdc4
+[B@5f150435
+[B@1c53fd30
+[B@50cbc42f
+[B@75412c2f
+[B@282ba1e
+[B@13b6d03
+[B@f5f2bb7
+[B@73035e27
+    111   68       3       java.util.concurrent.locks.ReentrantLock$Sync::tryRelease (51 bytes)   made not entrant
+[B@64c64813
+[B@3ecf72fd
+[B@483bf400
+[B@21a06946
+[B@77f03bb1
+[B@326de728
+[B@25618e91
+[B@7a92922
+[B@71f2a7d5
+[B@2cfb4a64
+[B@5474c6c
+[B@4b6995df
+[B@2fc14f68
+[B@591f989e
+[B@66048bfd
+[B@61443d8f
+[B@445b84c0
+[B@61a52fbd
+[B@233c0b17
+    112  145       4       java.util.concurrent.locks.AbstractQueuedSynchronizer::[B@63d4e2ba
+[B@7bb11784
+signalNext[B@33a10788
+ (34 bytes)
+[B@7006c658
+[B@34033bd0
+[B@47fd17e3
+[B@7cdbc5d3
+[B@3aa9e816
+[B@17d99928
+[B@3834d63f
+    113   63       3       java.util.concurrent.locks.AbstractQueuedSynchronizer::signalNext (34 bytes)   made not entrant
+[B@1ae369b7
+[B@6fffcba5
+[B@34340fab
+[B@2aafb23c
+[B@2b80d80f
+[B@3ab39c39
+[B@2eee9593
+[B@7907ec20
+[B@546a03af
+[B@721e0f4f
+[B@28864e92
+[B@6ea6d14e
+[B@6ad5c04e
+[B@6833ce2c
+[B@725bef66
+[B@2aaf7cc2
+[B@6e3c1e69
+[B@1888ff2c
+[B@35851384
+[B@649d209a
+[B@6adca536
+[B@357246de
+[B@28f67ac7
+[B@256216b3
+[B@2a18f23c
+[B@d7b1517
+[B@16c0663d
+[B@23223dd8
+[B@4ec6a292
+[B@1b40d5f0
+    115  146   !   3       java.nio.CharBuffer::wrap (21 bytes)
+[B@ea4a92b
+[B@3c5a99da
+[B@47f37ef1
+    115  158   !   3       java.io.PrintStream::writeln (81 bytes)[B@5a01ccaa
+
+[B@71c7db30
+[B@19bb089b
+[B@4563e9ab
+[B@11531931
+[B@5e025e70
+[B@1fbc7afb
+[B@45c8e616
+[B@4cdbe50f
+[B@66d33a
+    116  147       3       java.nio.HeapCharBuffer::<init> (23 bytes)
+[B@7cf10a6f
+[B@7e0babb1
+    116  148       3 [B@6debcae2
+      java.nio.CharBuffer::<init> (24 bytes)
+[B@5ba23b66
+[B@2ff4f00f
+    116  149       3       java.nio.CharBuffer::limit (6 bytes)[B@c818063
+
+[B@3f0ee7cb
+    116  150       [B@75bd9247
+3       java.nio.CharBuffer::limit (8 bytes)
+[B@7d417077
+[B@7dc36524
+    116  151       3       sun.nio.cs.StreamEncoder::implWrite (145 bytes)
+[B@35bbe5e8
+[B@2c8d66b2
+[B@5a39699c
+[B@3cb5cdba
+[B@56cbfb61
+[B@1134affc
+[B@d041cf
+[B@129a8472
+[B@1b0375b3
+[B@2f7c7260
+    117  152       [B@2d209079
+3       sun.nio.cs.StreamEncoder::growByteBufferIfNeeded (59 bytes)
+[B@6bdf28bb
+[B@6b71769e
+[B@2752f6e2
+[B@e580929
+[B@1cd072a9
+[B@7c75222b
+    117  153       3       java.lang.Math::round (56 bytes)[B@4c203ea1
+
+[B@27f674d
+[B@1d251891
+    118  154       3 [B@48140564
+      java.nio.Buffer::hasRemaining (17 bytes)
+[B@58ceff1
+[B@7c30a502
+    118  155   !   3       java.nio.charset.CharsetEncoder::encode[B@49e4cb85
+ (273 bytes)
+[B@2133c8f8
+[B@43a25848
+[B@3ac3fd8b
+[B@5594a1b5
+[B@6a5fc7f7
+[B@3b6eb2ec
+[B@1e643faf
+[B@6e8dacdf
+[B@7a79be86
+[B@34ce8af7
+[B@b684286
+[B@880ec60
+[B@3f3afe78
+[B@7f63425a
+[B@36d64342
+    120 [B@39ba5a14
+ 156       3       sun.nio.cs.SingleByte$Encoder::[B@511baa65
+encodeLoop (28 bytes)
+[B@340f438e
+[B@30c7da1e
+[B@5b464ce8
+[B@57829d67
+[B@19dfb72a
+    121  157       3       java.nio.CharBuffer::hasArray[B@17c68925
+ (20 bytes)
+[B@7e0ea639
+[B@3d24753a
+[B@59a6e353
+[B@7a0ac6e3
+[B@71be98f5
+[B@6fadae5d
+[B@17f6480
+[B@2d6e8792
+[B@2812cbfa
+[B@2acf57e3
+[B@506e6d5e
+[B@96532d6
+[B@3796751b
+[B@67b64c45
+[B@4411d970
+[B@6442b0a6
+[B@60f82f98
+[B@35f983a6
+[B@7f690630
+[B@edf4efb
+[B@2f7a2457
+[B@566776ad
+[B@6108b2d7
+[B@1554909b
+[B@6bf256fa
+[B@6cd8737
+[B@22f71333
+[B@13969fbe
+[B@6aaa5eb0
+[B@3498ed
+[B@1a407d53
+[B@3d8c7aca
+[B@5ebec15
+[B@21bcffb5
+[B@380fb434
+    123  159       4       jdk.internal.misc.InternalLock::lock (8 bytes)
+[B@668bc3d5
+[B@3cda1055
+[B@7a5d012c
+[B@3fb6a447
+[B@79b4d0f
+[B@6b2fad11
+[B@79698539
+[B@73f792cf
+[B@2ed94a8b
+[B@38082d64
+[B@dfd3711
+[B@42d3bd8b
+[B@26ba2a48
+[B@5f2050f6
+[B@3b81a1bc
+[B@64616ca2
+[B@13fee20c
+[B@4e04a765
+[B@783e6358
+[B@17550481
+[B@735f7ae5
+[B@180bc464
+[B@1324409e
+    124  161       3 [B@2c6a3f77
+     [B@246ae04d
+ sun.nio.cs.SingleByte$Encoder::encodeArrayLoop (280 bytes)
+[B@62043840
+[B@5315b42e
+[B@2ef9b8bc
+[B@5d624da6
+[B@1e67b872
+[B@60addb54
+[B@3f2a3a5
+    125   60       3       jdk.internal.misc.InternalLock::lock (8 bytes)   made not entrant
+[B@4cb2c100
+    125  176       4       java.io.OutputStream::flush (1 bytes)[B@6fb554cc
+
+[B@614c5515
+[B@77b52d12
+[B@2d554825
+    125  124       3       java.io.OutputStream::flush (1 bytes)   made not entrant
+[B@68837a77
+    125  160       4       jdk.internal.misc.InternalLock::unlock (8 bytes)
+[B@6be46e8f
+[B@3567135c
+[B@327471b5
+[B@4157f54e
+[B@90f6bfd
+[B@47f6473
+[B@15975490
+[B@6b143ee9
+[B@1936f0f5
+[B@6615435c
+[B@4909b8da
+[B@3a03464
+[B@2d3fcdbd
+[B@617c74e5
+[B@6537cf78
+[B@67b6d4ae
+[B@34b7bfc0
+[B@366e2eef
+[B@6df97b55
+[B@3cbbc1e0
+[B@35fb3008
+[B@7225790e
+[B@54a097cc
+[B@36f6e879
+[B@5a61f5df
+[B@3551a94
+[B@531be3c5
+[B@52af6cff
+[B@735b478
+    127  162       3       java.nio.CharBuffer::array (35 bytes)
+[B@2c9f9fb0
+[B@2096442d
+[B@9f70c54
+[B@234bef66
+[B@737996a0
+    127  163       3       java.lang.System$2::[B@61dc03ce
+encodeASCII (11 bytes)
+[B@50f8360d
+[B@2cb4c3ab
+    127   69       3       jdk.internal.misc.InternalLock::unlock (8 bytes)   made not entrant
+[B@13c78c0b
+[B@12843fce
+    127  164       [B@3dd3bcd
+3       sun.nio.cs.SingleByte::withResult (25 bytes)
+[B@97e1986
+[B@26f67b76
+[B@153f5a29
+    128  165   !   3       sun.nio.cs.StreamEncoder::flushBuffer (63 bytes)
+[B@7f560810
+[B@69d9c55
+[B@13a57a3b
+[B@7ca48474
+[B@337d0578
+[B@59e84876
+[B@61a485d2
+[B@39fb3ab6
+[B@6276ae34
+[B@7946e1f4
+[B@3c09711b
+[B@5cc7c2a6
+[B@b97c004
+    128  166       3       sun.nio.cs.StreamEncoder::lockedFlushBuffer (25 bytes)
+[B@4590c9c3
+[B@32e6e9c3
+    129  167       3       sun.nio.cs.StreamEncoder::isOpen (13 bytes)
+    132  168       3       sun.nio.cs.StreamEncoder::implFlushBuffer[B@5056dfcb
+ (15 bytes)
+[B@6574b225
+[B@2669b199
+[B@2344fc66
+    132  169       3       sun.nio.cs.StreamEncoder::writeBytes (139 bytes)
+[B@458ad742
+[B@5afa04c
+[B@6ea12c19
+[B@6a024a67
+[B@7921b0a2
+[B@174d20a
+[B@66d2e7d9
+[B@1efbd816
+[B@6a2bcfcb
+[B@4de8b406
+    133 [B@3c756e4d
+ 170       3       java.nio.ByteBuffer::flip (7 bytes)
+[B@7c0e2abd
+[B@48eff760
+    133  171       3 [B@402f32ff
+      java.nio.Buffer::flip (20 bytes)
+[B@573f2bb1
+[B@5ae9a829
+    133  172   !   3       java.io.PrintStream::write (94 bytes)
+[B@6d8a00e3
+[B@548b7f67
+[B@7ac7a4e4
+[B@6d78f375
+[B@50c87b21
+[B@5f375618
+[B@1810399e
+[B@32d992b2
+[B@215be6bb
+[B@4439f31e
+[B@5dfcfece
+[B@23ceabc1
+[B@5d5eef3d
+    134  173       3       java.io.PrintStream::implWrite (29 bytes)
+[B@56f4468b
+[B@6cc4c815
+[B@3a82f6ef
+    134  174   !   3       java.io.BufferedOutputStream::write (73 bytes)
+[B@100fc185
+[B@643b1d11
+[B@2ef5e5e3
+[B@36d4b5c
+[B@6d00a15d
+[B@51efea79
+[B@5034c75a
+    135  175       3      [B@396a51ab
+ java.io.BufferedOutputStream::implWrite (71 bytes)
+[B@51081592
+[B@7f9a81e8
+[B@9629756
+[B@62ee68d8
+[B@735b5592
+[B@58651fd0
+[B@4520ebad
+[B@5419f379
+[B@7dc7cbad
+[B@d2cc05a
+    136  177       3       java.io.BufferedOutputStream::growIfNeeded (59 bytes)
+    136  178     n 0       java.io.FileOutputStream::writeBytes (native)   
+[B@4f933fd1
+[B@548a9f61
+[B@1753acfe
+[B@7c16905e
+[B@2a2d45ba
+[B@2a5ca609
+[B@20e2cbe0
+[B@68be2bc2
+[B@28feb3fa
+[B@675d3402
+[B@51565ec2
+[B@482f8f11
+[B@1593948d
+[B@1b604f19
+[B@7823a2f9
+[B@4cc0edeb
+[B@457e2f02
+[B@5c7fa833
+[B@39aeed2f
+[B@724af044
+[B@4678c730
+[B@6767c1fc
+[B@29ee9faa
+[B@c038203
+[B@cc285f4
+[B@55f3ddb1
+[B@8bd1b6a
+[B@18be83e4
+[B@cb5822
+[B@4b9e13df
+[B@2b98378d
+[B@475530b9
+[B@1d057a39
+[B@26be92ad
+[B@4c70fda8
+[B@224edc67
+[B@14acaea5
+[B@46d56d67
+[B@d8355a8
+[B@59fa1d9b
+[B@28d25987
+[B@4501b7af
+[B@523884b2
+[B@5b275dab
+[B@61832929
+[B@29774679
+[B@3ffc5af1
+[B@5e5792a0
+[B@26653222
+[B@3532ec19
+[B@68c4039c
+[B@ae45eb6
+[B@59f99ea
+[B@27efef64
+[B@6f7fd0e6
+[B@47c62251
+[B@3e6fa38a
+[B@66a3ffec
+[B@77caeb3e
+[B@1e88b3c
+[B@42d80b78
+[B@3bfdc050
+[B@1bce4f0a
+[B@5e3a8624
+[B@5c3bd550
+[B@91161c7
+[B@604ed9f0
+[B@6a4f787b
+[B@685cb137
+[B@6a41eaa2
+[B@7cd62f43
+[B@6d4b1c02
+[B@6093dd95
+[B@5622fdf
+[B@4883b407
+[B@7d9d1a19
+[B@39c0f4a
+[B@1794d431
+[B@42e26948
+[B@57baeedf
+[B@343f4d3d
+[B@53b32d7
+[B@5442a311
+[B@548e7350
+[B@1a968a59
+[B@4667ae56
+[B@77cd7a0
+[B@204f30ec
+[B@e25b2fe
+[B@754ba872
+[B@146ba0ac
+[B@4dfa3a9d
+[B@6eebc39e
+[B@464bee09
+[B@f6c48ac
+[B@13deb50e
+[B@239963d8
+[B@3abbfa04
+[B@57fffcd7
+[B@31ef45e3
+[B@598067a5
+[B@3c0ecd4b
+[B@14bf9759
+[B@5f341870
+[B@553f17c
