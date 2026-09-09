@@ -6,6 +6,8 @@ public class ManipulationString {
      * break it up into pieces, where each piece is separated by a period, 
      * e.g., http://www.cs.princeton.edu should be broken up into www, cs, princeton, and edu, with the http:// part removed. 
      * Use either the split() or indexOf() methods.
+     * 
+     * Reference: https://introcs.cs.princeton.edu/java/31datatype/
      */
 
     public static void breakdownString(String url) {
