@@ -5,6 +5,8 @@ public class StringComparison {
      * Write a function that takes two string arguments s and t 
      * and returns the index of the first character in s that appears in t 
      * (or -1 if no character in s appears in t).
+     * 
+     * Reference: https://introcs.cs.princeton.edu/java/31datatype/
      */
 
     public int compareStringCharacters(String s, String t) {
