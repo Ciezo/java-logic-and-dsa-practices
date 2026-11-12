@@ -8,6 +8,7 @@
 package main.java.dsa;
 
 import java.util.HashMap;
+import java.util.Map;
 
 
 public class HashMaps {
@@ -19,6 +20,12 @@ public class HashMaps {
     // id, name
     // int, String
     private static HashMap<Integer, String> userDetails = new HashMap<>();
+
+    public static void displayValues(HashMap<Integer, String> map) {
+        for (Map.Entry<Integer,String> entry : map.entrySet()) {
+            System.out.println("Key: " + entry.getKey() + " : " + entry.getValue());
+        }
+    }
 
     public static void main(String[] args) {
         countriesCapital.put("Manila", "Philippines");
