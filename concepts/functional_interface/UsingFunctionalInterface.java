@@ -4,7 +4,8 @@ import java.util.function.Function;
 
 /**
  *
- * UsingFunctionalInterface
+ * UsingFunctionalInterface.
+ * Complex uses with user defined functional interfaces and its body through lambda
  */
 public class UsingFunctionalInterface {
 
