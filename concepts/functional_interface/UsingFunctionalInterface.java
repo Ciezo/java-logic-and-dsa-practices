@@ -26,7 +26,7 @@ public class UsingFunctionalInterface {
      * @param y second value
      * @return the sum = x + y
      */
-    public int computeForSum(int x, int y) {
+    public static int computeForSum(int x, int y) {
         // Here, the body of the functional interface is provided.
         // Lambda expressions are a good use with @FunctionalInterface
         // The syntax is like this: (arguments) -> { statements }
@@ -46,7 +46,7 @@ public class UsingFunctionalInterface {
      * @param add the proceeding lambda add operation for Operations.sum(int x, int y)
      * @return the sum = x + y
      */
-    public int computeForSum(int x, int y, Operations add) {
+    public static int computeForSum(int x, int y, Operations add) {
         // Here, the body for Operations is not implemented inside this.
         // But, we pass it as an argument
         return add.sum(x, y);
@@ -58,7 +58,7 @@ public class UsingFunctionalInterface {
      * @param y the value to add against x
      * @return the sum = x + y
      */
-    public int addForSum(int x, int y) {
+    public static int addForSum(int x, int y) {
         // This is a traditional statement without using functional interfaces nor lambda
         return x + y;
     }
@@ -92,14 +92,34 @@ public class UsingFunctionalInterface {
         final int VALUE_X = 10;
         final int VALUE_Y = 30;
 
+        // In sum1, we don't provide the body for the functional interface
+        // because Operations is done inside the method hence, only
+        // VALUE_X and VALUE_Y are provided
+        int sum1 = computeForSum(VALUE_X, VALUE_Y);
+        System.out.println("Sum 1: " + sum1);
+
+        // In sum2, the functional interface is provided as an argument.
+        // Its implementation is expressed as a lambda expression
+        int sum2 = computeForSum(VALUE_X, VALUE_Y, (x, y) -> {
+            int result = x + y;
+            return result;
+        });
+        System.out.println("Sum 2: " + sum2);
+
+        // In result1, we expressed the Function<Integer, Integer> as an argument provided
+        // to the doubleNumber method, and it is the same as a functional interface.
+        // A Function<T, R> only accepts one input and returns one result
         int result1 = doubleNumber(VALUE_X, (value) -> {
             int product = value * 2;
             return product;
         });
         System.out.println("Result 1: " + result1);
 
+        // In result2, we simply declared a Function<T, R> type and supplied
+        // its implementation as a simple lambda expression where
+        // (x) -> x * 2
         Function<Integer, Integer> timesTwo = (x) -> x * 2;
-        int result2 = timesTwo.apply(VALUE_X);
+        int result2 = timesTwo.apply(VALUE_X);  // Using the apply() call, we perform the to get the result for the given argument x
         System.out.println("Result 2: " + result2);
     }
 
