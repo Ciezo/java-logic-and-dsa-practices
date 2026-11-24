@@ -31,6 +31,16 @@ public class UsingFunctionalInterface {
     }
 
     /**
+     *
+     * AverageOperation
+     * Perform average = summation / n
+     */
+    @FunctionalInterface
+    interface AverageOperation {
+        double average(int[] elems);
+    }
+
+    /**
      * Add and get the sum for two values
      * @param x first value
      * @param y second value
@@ -122,6 +132,38 @@ public class UsingFunctionalInterface {
     }
 
     /**
+     * Compute for average.
+     * Utilize the AverageOperation functional interface
+     * @param elems the series to compute for average
+     * @return the computed average
+     */
+    public static double computeAverage(int[] elems) {
+        // the values lambda argument becomes an array if it is supplied
+        // with an array type
+        AverageOperation ave = (values) -> {
+            int sum = 0;
+    	    for (int i = 0; i < values.length; i++) {
+    	        sum += values[i];
+    	    }
+
+    	    return sum / values.length;
+        };
+
+        return ave.average(elems);
+    }
+
+    /**
+     * Compute for the average.
+     * Supply the implementation for AverageOperation through argument operation
+     * @param elems the series to compute for average
+     * @param operation the implementation for {@link AverageOperation#average(int[])}
+     * @return the computed average
+     */
+    public static double computeAverage(int[] elems, AverageOperation operation) {
+        return operation.average(elems);
+    }
+
+    /**
      * Main entry application
      * @param args
      */
@@ -171,6 +213,19 @@ public class UsingFunctionalInterface {
             System.out.println("Consumer 2");
             System.out.println(value);
         });
+
+        int[] elems = {10, 20, 30, 40};
+        double result3 = computeAverage(elems);
+        double result4 = computeAverage(elems, (values) -> {
+            int sum = 0;
+            for (int i = 0; i < values.length; i++) {
+                sum += values[i];
+            }
+            return sum / values.length;
+        });
+
+        System.out.println("Result 3 (Average): " + result3);
+        System.out.println("Result 4 (Average): " + result4);
     }
 
 }
