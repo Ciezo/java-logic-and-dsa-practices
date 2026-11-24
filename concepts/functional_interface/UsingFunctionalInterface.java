@@ -1,5 +1,6 @@
 package concepts.functional_interface;
 
+import java.util.function.Consumer;
 import java.util.function.Function;
 
 /**
@@ -19,6 +20,15 @@ public class UsingFunctionalInterface {
         int sum(int x, int y);
     }
 
+    /**
+     *
+     * DisplayAndRender
+     * Another functional interface that contains a single method
+     */
+    @FunctionalInterface
+    public interface DisplayAndRender {
+        void display(String msg);
+    }
 
     /**
      * Add and get the sum for two values
@@ -83,6 +93,33 @@ public class UsingFunctionalInterface {
         return operation.apply(x);
     }
 
+    /**
+     * Display a message
+     * Utilize the Consumer<String> to perform accept() in printing the message
+     * @param msg the string value to display
+     */
+    public static void display(String msg) {
+        // Here, we provide the type String to Consumer<T>
+        // as its expected argument type to accept
+        Consumer<String> method = (val) -> {
+            // Then, using lambda expressions the implementatio is supplied
+            System.out.println("Consumer1");
+            System.out.println(val);
+        };
+        // Lastly, we execute and perform the lambda by accept()
+        // But, this does not return any value unlike Function<T, R>
+        method.accept(msg);
+    }
+
+    /**
+     * Display a message.
+     * Supply a lambda expression for implementation
+     * @param msg the string value to display
+     * @param view the implementation for {@link DisplayAndRender#display(String)}
+     */
+    public static void display(String msg, DisplayAndRender view) {
+        view.display(msg);
+    }
 
     /**
      * Main entry application
@@ -121,6 +158,19 @@ public class UsingFunctionalInterface {
         Function<Integer, Integer> timesTwo = (x) -> x * 2;
         int result2 = timesTwo.apply(VALUE_X);  // Using the apply() call, we perform the to get the result for the given argument x
         System.out.println("Result 2: " + result2);
+
+        // In the code below, it can be seen that
+        // Consumer<T> class is used to perform and accept
+        // a String type as an input without returning a value unlike Function
+        display("Hello from Consumer!");
+
+        // In another code below, we supply the Consumer<String> implementation
+        // as an argument to the method. This is done so it can fulfill
+        // the contract for DisplayAndRender#view
+        display("Hello from Consumer2!", (value) -> {
+            System.out.println("Consumer 2");
+            System.out.println(value);
+        });
     }
 
 }
